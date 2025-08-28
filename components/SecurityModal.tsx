@@ -327,11 +327,14 @@ export const SecurityModal: React.FC<SecurityModalProps> = ({
                 onClose={() => setShowLogoutModal(false)}
                 onConfirm={() => {
                     setShowLogoutModal(false);
-                    // Handle logout logic
+                    // Handle logout
                 }}
                 title="Logout Confirmation"
-                message="Are you sure you want to logout? You'll need to sign in again to access your account."
+                message="Are you sure you want to logout? You'll need to sign in again."
                 confirmText="Logout"
+                cancelText="Stay"
+                confirmColor={AppTheme.colors.error[500]}
+                icon="logout"
             />
 
             <ConfirmationModal

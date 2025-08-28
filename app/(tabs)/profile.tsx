@@ -1,5 +1,7 @@
 // app/(tabs)/profile.tsx
 import { AboutQVuewModal } from '@/components/AboutQVuewModal';
+import { CommonHeader } from '@/components/CommonHeader';
+import { ConfirmationModal } from '@/components/ConfirmationModal';
 import { PrivacyPolicyModal } from '@/components/PrivacyPolicyModal';
 import { AppTheme } from '@/constants/theme';
 import { Box, Heading, HStack, Pressable, ScrollView, Text, VStack } from '@gluestack-ui/themed';
@@ -13,8 +15,6 @@ import { SettingsModal } from '../../components/SettingsModal';
 import { TermsOfServiceModal } from '../../components/TermsOfServiceModal';
 import { useTheme } from '../../components/ThemeProvider';
 import { mockUser, type User } from '../../constants/profileTypes';
-import { ConfirmationModal } from '@/components/ConfirmationModal';
-import { CommonHeader } from '@/components/CommonHeader';
 
 
 export default function ProfileScreen() {
@@ -59,7 +59,7 @@ export default function ProfileScreen() {
             <HStack
                 alignItems="center"
                 space="md"
-                backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
+                backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]}
                 borderRadius={AppTheme.borderRadius.xl}
                 p={AppTheme.spacing.lg}
                 mb={AppTheme.spacing.sm}
@@ -99,10 +99,10 @@ export default function ProfileScreen() {
     );
 
     return (
-        <Box flex={1} backgroundColor={isDark ? AppTheme.colors.gray[900] : AppTheme.colors.blue[50]}>
+        <Box flex={1} backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]}>
             <CommonHeader />
             <LinearGradient
-                colors={isDark ? AppTheme.gradients.dark : AppTheme.gradients.background}
+                colors={isDark ? AppTheme.gradients.darkBackground : AppTheme.gradients.background}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={{ flex: 1 }}

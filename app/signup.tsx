@@ -52,7 +52,7 @@ const SuccessModal = ({
       // Auto close after exactly 2 seconds
       const timer = setTimeout(() => {
         onClose();
-      }, 2000); // ✅ Fixed: 2 seconds instead of 3
+      }, 2000);
       return () => clearTimeout(timer);
     }
   }, [isVisible, onClose]);
@@ -68,13 +68,13 @@ const SuccessModal = ({
       bottom={0}
       zIndex={999}
     >
-      {/* ✅ White blur background instead of dark overlay */}
+      {/* Enhanced blur background for dark mode */}
       <BlurView
         intensity={50}
-        tint="light"
+        tint={isDark ? "dark" : "light"}
         style={{
           ...StyleSheet.absoluteFillObject,
-          backgroundColor: 'rgba(255, 255, 255, 0.3)', // Light white overlay
+          backgroundColor: isDark ? 'rgba(0, 0, 0, 0.4)' : 'rgba(255, 255, 255, 0.3)',
         }}
       />
 
@@ -86,15 +86,15 @@ const SuccessModal = ({
         px={AppTheme.spacing.lg}
       >
         <Box
-          backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
+          backgroundColor={isDark ? AppTheme.colors.dark.surface : "#ffffff"}
           borderRadius={AppTheme.borderRadius['2xl']}
           p={AppTheme.spacing.xl}
           alignItems="center"
           maxWidth={320}
           width="90%"
-          shadowColor="#000000"
+          shadowColor={isDark ? "#000000" : "#000000"}
           shadowOffset={{ width: 0, height: 8 }}
-          shadowOpacity={0.3}
+          shadowOpacity={isDark ? 0.5 : 0.3}
           shadowRadius={20}
           elevation={10}
         >
@@ -111,14 +111,14 @@ const SuccessModal = ({
           </Box>
           <Heading
             size="xl"
-            color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+            color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
             mb={AppTheme.spacing.sm}
           >
             Code Sent!
           </Heading>
           <Text
             fontSize={AppTheme.typography.fontSizes.sm}
-            color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[600]}
+            color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.gray[600]}
             textAlign="center"
             lineHeight={20}
           >
@@ -158,7 +158,7 @@ const TermsModal = ({
   return (
     <Modal
       visible={isVisible}
-      transparent={true} // ✅ Essential for blur effect
+      transparent={true}
       animationType="fade"
       onRequestClose={onClose}
     >
@@ -168,14 +168,16 @@ const TermsModal = ({
         left={0}
         right={0}
         bottom={0}
-        backgroundColor="rgba(0,0,0,0.6)"
+        backgroundColor={isDark ? "rgba(0,0,0,0.8)" : "rgba(0,0,0,0.6)"}
         justifyContent="center"
         alignItems="center"
         zIndex={999}
         px={AppTheme.spacing.md}
       >
         <Box
-          backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
+          backgroundColor={isDark ? AppTheme.colors.dark.surface : "#ffffff"}
+          borderColor={isDark ? AppTheme.colors.dark.border : "transparent"}
+          borderWidth={isDark ? 1 : 0}
           borderRadius={AppTheme.borderRadius.xl}
           maxHeight="80%"
           width="95%"
@@ -188,7 +190,7 @@ const TermsModal = ({
             justifyContent="space-between"
             px={AppTheme.spacing.lg}
             py={AppTheme.spacing.md}
-            backgroundColor={AppTheme.colors.blue[600]}
+            backgroundColor={isDark ? AppTheme.colors.dark.surfaceLight : AppTheme.colors.blue[600]}
           >
             <Heading size="md" color="#ffffff" fontWeight="700">
               {title}
@@ -202,7 +204,7 @@ const TermsModal = ({
           <ScrollView
             style={{
               padding: AppTheme.spacing.lg,
-              backgroundColor: isDark ? AppTheme.colors.gray[900] : "#ffffff",
+              backgroundColor: isDark ? AppTheme.colors.dark.background : "#ffffff",
             }}
             showsVerticalScrollIndicator={false}
           >
@@ -545,14 +547,14 @@ export default function SignupScreen() {
       <VStack mb={AppTheme.spacing.lg}>
         <Heading
           size="3xl"
-          color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+          color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
           fontWeight="700"
           mb={AppTheme.spacing.sm}
         >
           Create Your Account
         </Heading>
         <Text
-          color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
+          color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.blue[600]}
           fontSize={AppTheme.typography.fontSizes.md}
         >
           Let&apos;s get started with your basic information
@@ -565,8 +567,8 @@ export default function SignupScreen() {
           <HStack space="sm">
             <Box
               flex={1}
-              backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-              borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+              backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+              borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
               borderRadius={AppTheme.borderRadius.lg}
               borderWidth={1}
               h={56}
@@ -577,12 +579,12 @@ export default function SignupScreen() {
                 <Icon name="person" size={20} color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[500]} />
                 <Input flex={1} variant="outline" borderWidth={0} backgroundColor="transparent">
                   <InputField
-                    placeholder="Name"
+                    placeholder="First Name"
                     value={formData.firstName}
                     onChangeText={(value) => handleInputChange('firstName', value)}
-                    color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                     fontSize={AppTheme.typography.fontSizes.md}
-                    placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                    placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]}
                     ml={AppTheme.spacing.sm}
                   />
                 </Input>
@@ -591,8 +593,8 @@ export default function SignupScreen() {
 
             <Box
               flex={1}
-              backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-              borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+              backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+              borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
               borderRadius={AppTheme.borderRadius.lg}
               borderWidth={1}
               h={56}
@@ -603,12 +605,12 @@ export default function SignupScreen() {
                 <Icon name="person" size={20} color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[500]} />
                 <Input flex={1} variant="outline" borderWidth={0} backgroundColor="transparent">
                   <InputField
-                    placeholder="LastName"
+                    placeholder="Last Name"
                     value={formData.lastName}
                     onChangeText={(value) => handleInputChange('lastName', value)}
-                    color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                     fontSize={AppTheme.typography.fontSizes.md}
-                    placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                    placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]}
                     ml={AppTheme.spacing.sm}
                   />
                 </Input>
@@ -618,8 +620,8 @@ export default function SignupScreen() {
 
           {/* Phone Number */}
           <Box
-            backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-            borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+            backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+            borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
             borderRadius={AppTheme.borderRadius.lg}
             borderWidth={1}
             h={56}
@@ -637,7 +639,7 @@ export default function SignupScreen() {
               >
                 🇮🇳 +91
               </Text>
-              <Box width={1} height="60%" backgroundColor={isDark ? AppTheme.colors.gray[600] : AppTheme.colors.gray[300]} />
+              <Box width={1} height="60%" backgroundColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]} />
               <Input flex={1} variant="outline" borderWidth={0} backgroundColor="transparent">
                 <InputField
                   placeholder="Phone Number"
@@ -645,9 +647,9 @@ export default function SignupScreen() {
                   onChangeText={(value) => handleInputChange('phoneNumber', value)}
                   keyboardType="numeric"
                   maxLength={10}
-                  color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                  color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                   fontSize={AppTheme.typography.fontSizes.md}
-                  placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                  placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]}
                   ml={AppTheme.spacing.sm}
                 />
               </Input>
@@ -656,7 +658,7 @@ export default function SignupScreen() {
 
           <Pressable onPress={handleSendOTP} disabled={isSubmitting} mt={AppTheme.spacing.lg}>
             <LinearGradient
-              colors={AppTheme.gradients.button}
+              colors={isDark ? AppTheme.gradients.darkButton : AppTheme.gradients.button}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
               style={{
@@ -682,14 +684,14 @@ export default function SignupScreen() {
           <Center>
             <Heading
               size="xl"
-              color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+              color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
               mb={AppTheme.spacing.sm}
               textAlign="center"
             >
               Verify Your Phone
             </Heading>
             <Text
-              color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
+              color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.blue[600]}
               textAlign="center"
               fontSize={AppTheme.typography.fontSizes.sm}
             >
@@ -704,8 +706,8 @@ export default function SignupScreen() {
                 key={index}
                 w={48}
                 h={48}
-                backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-                borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+                backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+                borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
                 borderRadius={AppTheme.borderRadius.lg}
                 borderWidth={1}
                 justifyContent="center"
@@ -721,9 +723,8 @@ export default function SignupScreen() {
                     onChangeText={(value) => handleOTPChange(index, value)}
                     keyboardType="numeric"
                     maxLength={1}
-                    color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                   />
-
                 </Input>
               </Box>
             ))}
@@ -731,7 +732,7 @@ export default function SignupScreen() {
 
           <Pressable onPress={handleVerifyOTP} mt={AppTheme.spacing.lg}>
             <LinearGradient
-              colors={AppTheme.gradients.button}
+              colors={isDark ? AppTheme.gradients.darkButton : AppTheme.gradients.button}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
               style={{
@@ -763,7 +764,7 @@ export default function SignupScreen() {
             </Pressable>
             <HStack alignItems="center" space="xs">
               <Text
-                color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                color={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[600]}
                 fontSize={AppTheme.typography.fontSizes.sm}
               >
                 Didn&apos;t receive code?
@@ -778,7 +779,7 @@ export default function SignupScreen() {
                 disabled={resendTimer > 0}
               >
                 <Text
-                  color={resendTimer > 0 ? AppTheme.colors.gray[400] : AppTheme.colors.blue[600]}
+                  color={resendTimer > 0 ? (isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]) : AppTheme.colors.blue[600]}
                   fontSize={AppTheme.typography.fontSizes.sm}
                 >
                   {resendTimer > 0 ? `Resend in ${resendTimer}s` : 'Resend Code'}
@@ -802,14 +803,14 @@ export default function SignupScreen() {
       <VStack mb={AppTheme.spacing.lg}>
         <Heading
           size="3xl"
-          color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+          color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
           fontWeight="700"
           mb={AppTheme.spacing.sm}
         >
           When were you born?
         </Heading>
         <Text
-          color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
+          color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.blue[600]}
           fontSize={AppTheme.typography.fontSizes.md}
         >
           This helps us provide age-appropriate services
@@ -819,7 +820,7 @@ export default function SignupScreen() {
       {/* Gender Selection */}
       <VStack space="sm">
         <Text
-          color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+          color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
           fontWeight="600"
           fontSize={AppTheme.typography.fontSizes.md}
         >
@@ -841,14 +842,14 @@ export default function SignupScreen() {
                   formData.gender === option.value
                     ? AppTheme.colors.blue[600]
                     : isDark
-                      ? AppTheme.colors.gray[800]
+                      ? AppTheme.colors.dark.surface
                       : AppTheme.colors.gray[50]
                 }
                 borderColor={
                   formData.gender === option.value
                     ? AppTheme.colors.blue[600]
                     : isDark
-                      ? AppTheme.colors.gray[700]
+                      ? AppTheme.colors.dark.border
                       : AppTheme.colors.gray[300]
                 }
                 borderWidth={2}
@@ -865,7 +866,7 @@ export default function SignupScreen() {
                     formData.gender === option.value
                       ? "#ffffff"
                       : isDark
-                        ? AppTheme.colors.gray[400]
+                        ? AppTheme.colors.text.dark.secondary
                         : AppTheme.colors.gray[600]
                   }
                 />
@@ -874,7 +875,7 @@ export default function SignupScreen() {
                     formData.gender === option.value
                       ? "#ffffff"
                       : isDark
-                        ? AppTheme.colors.gray[50]
+                        ? AppTheme.colors.text.dark.primary
                         : AppTheme.colors.gray[900]
                   }
                   fontWeight="500"
@@ -889,10 +890,10 @@ export default function SignupScreen() {
         </HStack>
       </VStack>
 
-      {/* ✅ Birthdate Picker with Age Calculation */}
+      {/* Birthdate Picker with Age Calculation */}
       <VStack space="sm">
         <Text
-          color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+          color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
           fontWeight="600"
           fontSize={AppTheme.typography.fontSizes.md}
         >
@@ -901,8 +902,8 @@ export default function SignupScreen() {
 
         <Pressable onPress={openDatePicker}>
           <Box
-            backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-            borderColor={ageError ? AppTheme.colors.error[500] : (isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300])}
+            backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+            borderColor={ageError ? AppTheme.colors.error[500] : (isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300])}
             borderRadius={AppTheme.borderRadius.lg}
             borderWidth={ageError ? 2 : 1}
             h={56}
@@ -914,8 +915,8 @@ export default function SignupScreen() {
               <Text
                 color={
                   formData.birthdate
-                    ? (isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900])
-                    : (isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400])
+                    ? (isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900])
+                    : (isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400])
                 }
                 fontSize={AppTheme.typography.fontSizes.md}
                 ml={AppTheme.spacing.sm}
@@ -926,7 +927,7 @@ export default function SignupScreen() {
               <Icon
                 name="expand-more"
                 size={20}
-                color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[500]}
+                color={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[500]}
               />
             </HStack>
           </Box>
@@ -962,14 +963,16 @@ export default function SignupScreen() {
               >
                 <Box
                   flex={1}
-                  backgroundColor="rgba(0,0,0,0.5)"
+                  backgroundColor={isDark ? "rgba(0,0,0,0.8)" : "rgba(0,0,0,0.5)"}
                   justifyContent="flex-end"
                 >
                   <Box
-                    backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
+                    backgroundColor={isDark ? AppTheme.colors.dark.surface : "#ffffff"}
                     borderTopLeftRadius={AppTheme.borderRadius.xl}
                     borderTopRightRadius={AppTheme.borderRadius.xl}
                     p={AppTheme.spacing.lg}
+                    borderColor={isDark ? AppTheme.colors.dark.border : "transparent"}
+                    borderWidth={isDark ? 1 : 0}
                   >
                     {/* Header */}
                     <HStack justifyContent="space-between" alignItems="center" mb={AppTheme.spacing.md}>
@@ -984,7 +987,7 @@ export default function SignupScreen() {
                       </Pressable>
                       <Heading
                         size="md"
-                        color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                        color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                       >
                         Select Birthdate
                       </Heading>
@@ -1033,7 +1036,7 @@ export default function SignupScreen() {
         mt={AppTheme.spacing.lg}
       >
         <LinearGradient
-          colors={AppTheme.gradients.button}
+          colors={isDark ? AppTheme.gradients.darkButton : AppTheme.gradients.button}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
           style={{
@@ -1056,7 +1059,6 @@ export default function SignupScreen() {
     </VStack>
   );
 
-
   const renderStep3 = () => {
     const strength = getPasswordStrength();
 
@@ -1065,14 +1067,14 @@ export default function SignupScreen() {
         <VStack mb={AppTheme.spacing.lg}>
           <Heading
             size="3xl"
-            color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+            color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
             fontWeight="700"
             mb={AppTheme.spacing.sm}
           >
             Create Your Password
           </Heading>
           <Text
-            color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
+            color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.blue[600]}
             fontSize={AppTheme.typography.fontSizes.md}
           >
             Choose a strong password to secure your account
@@ -1081,8 +1083,8 @@ export default function SignupScreen() {
 
         {/* Email Field */}
         <Box
-          backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-          borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+          backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+          borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
           borderRadius={AppTheme.borderRadius.lg}
           borderWidth={1}
           h={56}
@@ -1098,9 +1100,9 @@ export default function SignupScreen() {
                 onChangeText={(value) => handleInputChange('email', value)}
                 keyboardType="email-address"
                 autoCapitalize="none"
-                color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                 fontSize={AppTheme.typography.fontSizes.md}
-                placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]}
                 ml={AppTheme.spacing.sm}
               />
             </Input>
@@ -1110,8 +1112,8 @@ export default function SignupScreen() {
         {/* Password Field */}
         <VStack space="xs">
           <Box
-            backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-            borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+            backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+            borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
             borderRadius={AppTheme.borderRadius.lg}
             borderWidth={1}
             h={56}
@@ -1126,9 +1128,9 @@ export default function SignupScreen() {
                   value={formData.password}
                   onChangeText={(value) => handleInputChange('password', value)}
                   secureTextEntry={!showPassword}
-                  color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                  color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                   fontSize={AppTheme.typography.fontSizes.md}
-                  placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                  placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]}
                   ml={AppTheme.spacing.sm}
                 />
               </Input>
@@ -1153,7 +1155,7 @@ export default function SignupScreen() {
                 <Box
                   flex={1}
                   height={4}
-                  backgroundColor={AppTheme.colors.gray[300]}
+                  backgroundColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
                   borderRadius={AppTheme.borderRadius.full}
                 >
                   <Box
@@ -1186,8 +1188,8 @@ export default function SignupScreen() {
 
         {/* Confirm Password Field */}
         <Box
-          backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-          borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+          backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+          borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
           borderRadius={AppTheme.borderRadius.lg}
           borderWidth={1}
           h={56}
@@ -1202,9 +1204,9 @@ export default function SignupScreen() {
                 value={formData.confirmPassword}
                 onChangeText={(value) => handleInputChange('confirmPassword', value)}
                 secureTextEntry={!showPassword}
-                color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[900]}
                 fontSize={AppTheme.typography.fontSizes.md}
-                placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[400]}
                 ml={AppTheme.spacing.sm}
               />
             </Input>
@@ -1229,7 +1231,7 @@ export default function SignupScreen() {
                 hasAcceptedTerms
                   ? AppTheme.colors.blue[600]
                   : isDark
-                    ? AppTheme.colors.gray[600]
+                    ? AppTheme.colors.dark.border
                     : AppTheme.colors.gray[300]
               }
               borderWidth={2}
@@ -1244,7 +1246,7 @@ export default function SignupScreen() {
           </Pressable>
           <VStack flex={1}>
             <Text
-              color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}
+              color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}
               fontSize={AppTheme.typography.fontSizes.sm}
             >
               I agree to the{' '}
@@ -1273,7 +1275,7 @@ export default function SignupScreen() {
           mt={AppTheme.spacing.lg}
         >
           <LinearGradient
-            colors={AppTheme.gradients.button}
+            colors={isDark ? AppTheme.gradients.darkButton : AppTheme.gradients.button}
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 0 }}
             style={{
@@ -1301,29 +1303,29 @@ export default function SignupScreen() {
           title="Terms of Service"
         >
           <VStack space="md">
-            <Heading size="lg" color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}>
+            <Heading size="lg" color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}>
               QVuew Terms of Service
             </Heading>
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[600]}>
               Last Updated: April 20, 2025
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">1. Acceptance of Terms</Text>{'\n'}
               Welcome to QVuew. By accessing or using our queue management service, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our service.
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">2. Description of Service</Text>{'\n'}
               QVuew provides businesses with queue management solutions, including virtual queue systems, appointment scheduling, and customer flow analytics.
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">3. Account Registration</Text>{'\n'}
               To access certain features of QVuew, you must register for an account. You agree to provide accurate information during registration and to keep your account information updated.
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">4. Contact Information</Text>{'\n'}
               If you have questions about these Terms of Service, please contact us at support@qvuew.com.
             </Text>
@@ -1336,29 +1338,29 @@ export default function SignupScreen() {
           title="Privacy Policy"
         >
           <VStack space="md">
-            <Heading size="lg" color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}>
+            <Heading size="lg" color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}>
               QVuew Privacy Policy
             </Heading>
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.gray[600]}>
               Last Updated: April 20, 2025
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">1. Introduction</Text>{'\n'}
               At QVuew, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our queue management service.
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">2. Information We Collect</Text>{'\n'}
               We collect information you provide directly to us, such as business contact information, business details, account credentials, and payment information.
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">3. Data Security</Text>{'\n'}
               We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure. All data is encrypted during transmission and at rest.
             </Text>
 
-            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}>
+            <Text fontSize={AppTheme.typography.fontSizes.sm} color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.gray[700]}>
               <Text fontWeight="600">4. Contact Us</Text>{'\n'}
               If you have questions about this Privacy Policy, please contact us at privacy@qvuew.com.
             </Text>
@@ -1369,9 +1371,9 @@ export default function SignupScreen() {
   };
 
   return (
-    <Box flex={1} backgroundColor={isDark ? AppTheme.colors.gray[900] : AppTheme.colors.blue[50]}>
+    <Box flex={1} backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]}>
       <LinearGradient
-        colors={isDark ? AppTheme.gradients.dark : AppTheme.gradients.background}
+        colors={isDark ? AppTheme.gradients.darkBackground : AppTheme.gradients.background}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
         style={{ flex: 1 }}
@@ -1398,7 +1400,7 @@ export default function SignupScreen() {
                   </HStack>
                 </Pressable>
                 <Text
-                  color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]}
+                  color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.blue[600]}
                   fontSize={AppTheme.typography.fontSizes.sm}
                 >
                   Step {currentStep} of {totalSteps}
@@ -1407,12 +1409,12 @@ export default function SignupScreen() {
 
               {/* Progress Bar */}
               <Box
-                backgroundColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.blue[100]}
+                backgroundColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.blue[100]}
                 height={4}
                 borderRadius={AppTheme.borderRadius.full}
               >
                 <LinearGradient
-                  colors={AppTheme.gradients.button}
+                  colors={isDark ? AppTheme.gradients.darkButton : AppTheme.gradients.button}
                   start={{ x: 0, y: 0 }}
                   end={{ x: 1, y: 0 }}
                   style={{

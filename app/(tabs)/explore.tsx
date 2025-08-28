@@ -1,14 +1,31 @@
+import { CommonHeader } from '@/components/CommonHeader';
 import { AppTheme } from '@/constants/theme';
-import { Box, Heading, HStack, Input, InputField, Pressable, ScrollView, Text, VStack } from '@gluestack-ui/themed';
+import {
+    Box,
+    Heading,
+    HStack,
+    Input,
+    InputField,
+    Pressable,
+    ScrollView,
+    Text,
+    VStack,
+} from '@gluestack-ui/themed';
+import Slider from '@react-native-community/slider';
 import { LinearGradient } from 'expo-linear-gradient';
 import React, { useMemo, useState } from 'react';
-import { Alert } from 'react-native';
+import { Alert, Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { BusinessCard } from '../../components/BusinessCard';
 import { BusinessDetailModal } from '../../components/BusinessDetailModal';
 import { useTheme } from '../../components/ThemeProvider';
-import { comprehensiveMockBusinesses, serviceCategories, type Business } from '../../constants/exploreMockData';
-import { CommonHeader } from '@/components/CommonHeader';
+import {
+    comprehensiveMockBusinesses,
+    serviceCategories,
+    type Business,
+} from '../../constants/exploreMockData';
+
+const { width: screenWidth } = Dimensions.get('window');
 
 export default function ExploreScreen() {
     const { isDark } = useTheme();
@@ -20,13 +37,24 @@ export default function ExploreScreen() {
     const [selectedCategory, setSelectedCategory] = useState('All Services');
     const [maxDistance, setMaxDistance] = useState(10);
     const [sortBy, setSortBy] = useState<'distance' | 'rating' | 'popularity'>('distance');
+    const [showSortDropdown, setShowSortDropdown] = useState(false);
+
+    // Sort options
+    const sortOptions = [
+        { value: 'distance', label: 'Distance', icon: 'place' },
+        { value: 'rating', label: 'Rating', icon: 'star' },
+        { value: 'popularity', label: 'Popularity', icon: 'trending-up' }
+    ];
 
     // Filtered and sorted businesses
     const filteredBusinesses = useMemo(() => {
-        let filtered = comprehensiveMockBusinesses.filter(business => {
-            const matchesSearch = business.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        let filtered = comprehensiveMockBusinesses.filter((business) => {
+            const matchesSearch =
+                business.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 business.category.toLowerCase().includes(searchQuery.toLowerCase());
-            const matchesCategory = selectedCategory === 'All Services' || business.category === selectedCategory;
+            const matchesCategory =
+                selectedCategory === 'All Services' ||
+                business.category === selectedCategory;
             const withinDistance = business.distance <= maxDistance;
 
             return matchesSearch && matchesCategory && withinDistance;
@@ -56,36 +84,57 @@ export default function ExploreScreen() {
 
     const handleCallBusiness = () => {
         if (selectedBusiness) {
-            Alert.alert('Call Business', `Calling ${selectedBusiness.name} at ${selectedBusiness.phone}`);
+            Alert.alert(
+                'Call Business',
+                `Calling ${selectedBusiness.name} at ${selectedBusiness.phone}`
+            );
         }
     };
 
+    const getCurrentSortOption = () => {
+        return sortOptions.find(option => option.value === sortBy) || sortOptions[0];
+    };
+
     return (
-        <Box flex={1} backgroundColor={isDark ? AppTheme.colors.gray[900] : AppTheme.colors.blue[50]}>
+        <Box
+            flex={1}
+            backgroundColor={
+                isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]
+            }
+        >
             <CommonHeader />
             <LinearGradient
-                colors={isDark ? AppTheme.gradients.dark : AppTheme.gradients.background}
+                colors={isDark ? AppTheme.gradients.darkBackground : AppTheme.gradients.background}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={{ flex: 1 }}
             >
                 <ScrollView flex={1} showsVerticalScrollIndicator={false}>
-                    <VStack flex={1} px={AppTheme.spacing.lg} pt={AppTheme.spacing['2xl']} pb={AppTheme.spacing.xl}>
-
-                        {/* Header */}
-                       
-
+                    <VStack
+                        flex={1}
+                        px={AppTheme.spacing.lg}
+                        pt={AppTheme.spacing['2xl']}
+                        pb={AppTheme.spacing.xl}
+                    >
                         {/* Explore Section */}
                         <VStack space="lg" mb={AppTheme.spacing.xl}>
                             <Heading
                                 size="lg"
-                                color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+                                color={
+                                    isDark
+                                        ? AppTheme.colors.text.dark.primary
+                                        : AppTheme.colors.text.primary
+                                }
                                 fontWeight="600"
                             >
                                 Explore Services Around You
                             </Heading>
                             <Text
-                                color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
+                                color={
+                                    isDark
+                                        ? AppTheme.colors.text.dark.secondary
+                                        : AppTheme.colors.text.secondary
+                                }
                                 fontSize={AppTheme.typography.fontSizes.sm}
                             >
                                 Discover nearby businesses and join their queues instantly
@@ -94,15 +143,25 @@ export default function ExploreScreen() {
 
                         {/* Location Status */}
                         <Box
-                            backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.success[50]}
+                            backgroundColor={
+                                isDark ? AppTheme.colors.dark.surface : AppTheme.colors.success[50]
+                            }
                             borderRadius={AppTheme.borderRadius.lg}
                             p={AppTheme.spacing.md}
                             mb={AppTheme.spacing.lg}
                         >
                             <HStack alignItems="center" space="sm">
-                                <Icon name="location-on" size={20} color={AppTheme.colors.success[500]} />
+                                <Icon
+                                    name="location-on"
+                                    size={20}
+                                    color={AppTheme.colors.success[500]}
+                                />
                                 <Text
-                                    color={isDark ? AppTheme.colors.success[500] : AppTheme.colors.success[600]}
+                                    color={
+                                        isDark
+                                            ? AppTheme.colors.success[400]
+                                            : AppTheme.colors.success[600]
+                                    }
                                     fontSize={AppTheme.typography.fontSizes.sm}
                                     fontWeight="500"
                                 >
@@ -110,32 +169,56 @@ export default function ExploreScreen() {
                                 </Text>
                             </HStack>
                             <Text
-                                color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.success[600]}
+                                color={
+                                    isDark
+                                        ? AppTheme.colors.text.dark.subtle
+                                        : AppTheme.colors.text.secondary
+                                }
                                 fontSize={AppTheme.typography.fontSizes.xs}
                                 mt={AppTheme.spacing.xs}
                             >
-                                Showing businesses within {maxDistance} miles of your location
+                                Showing businesses within {maxDistance} miles
                             </Text>
                         </Box>
 
                         {/* Search Bar */}
                         <Box
-                            backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
+                            backgroundColor={
+                                isDark ? AppTheme.colors.dark.surface : "#ffffff"
+                            }
                             borderRadius={AppTheme.borderRadius.lg}
                             borderWidth={1}
-                            borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+                            borderColor={
+                                isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]
+                            }
                             mb={AppTheme.spacing.md}
                         >
                             <HStack alignItems="center" px={AppTheme.spacing.md}>
-                                <Icon name="search" size={20} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[500]} />
+                                <Icon
+                                    name="search"
+                                    size={20}
+                                    color={
+                                        isDark
+                                            ? AppTheme.colors.text.dark.subtle
+                                            : AppTheme.colors.gray[500]
+                                    }
+                                />
                                 <Input flex={1} variant="outline" borderWidth={0} backgroundColor="transparent">
                                     <InputField
                                         placeholder="Search businesses, services..."
                                         value={searchQuery}
                                         onChangeText={setSearchQuery}
-                                        color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                                        color={
+                                            isDark
+                                                ? AppTheme.colors.text.dark.primary
+                                                : AppTheme.colors.text.primary
+                                        }
                                         fontSize={AppTheme.typography.fontSizes.md}
-                                        placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                                        placeholderTextColor={
+                                            isDark
+                                                ? AppTheme.colors.text.dark.muted
+                                                : AppTheme.colors.text.muted
+                                        }
                                         ml={AppTheme.spacing.sm}
                                     />
                                 </Input>
@@ -143,7 +226,11 @@ export default function ExploreScreen() {
                         </Box>
 
                         {/* Category Filter */}
-                        <ScrollView horizontal showsHorizontalScrollIndicator={false} mb={AppTheme.spacing.md}>
+                        <ScrollView
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            mb={AppTheme.spacing.lg}
+                        >
                             <HStack space="sm">
                                 {serviceCategories.map((category) => (
                                     <Pressable
@@ -155,7 +242,7 @@ export default function ExploreScreen() {
                                                 selectedCategory === category
                                                     ? AppTheme.colors.blue[600]
                                                     : isDark
-                                                        ? AppTheme.colors.gray[800]
+                                                        ? AppTheme.colors.dark.surface
                                                         : "#ffffff"
                                             }
                                             borderRadius={AppTheme.borderRadius.full}
@@ -166,7 +253,7 @@ export default function ExploreScreen() {
                                                 selectedCategory === category
                                                     ? AppTheme.colors.blue[600]
                                                     : isDark
-                                                        ? AppTheme.colors.gray[700]
+                                                        ? AppTheme.colors.dark.border
                                                         : AppTheme.colors.gray[300]
                                             }
                                         >
@@ -175,8 +262,8 @@ export default function ExploreScreen() {
                                                     selectedCategory === category
                                                         ? "#ffffff"
                                                         : isDark
-                                                            ? AppTheme.colors.gray[300]
-                                                            : AppTheme.colors.gray[700]
+                                                            ? AppTheme.colors.text.dark.secondary
+                                                            : AppTheme.colors.text.secondary
                                                 }
                                                 fontSize={AppTheme.typography.fontSizes.sm}
                                                 fontWeight="500"
@@ -189,54 +276,266 @@ export default function ExploreScreen() {
                             </HStack>
                         </ScrollView>
 
-                        {/* Distance and Sort Controls */}
-                        <HStack justifyContent="space-between" alignItems="center" mb={AppTheme.spacing.lg}>
-                            <VStack>
-                                <Text
-                                    fontSize={AppTheme.typography.fontSizes.sm}
-                                    color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
-                                    mb={AppTheme.spacing.xs}
-                                >
-                                    Distance
-                                </Text>
-                                <Text
-                                    fontSize={AppTheme.typography.fontSizes.md}
-                                    fontWeight="600"
-                                    color={AppTheme.colors.blue[600]}
-                                >
-                                    {maxDistance} miles
-                                </Text>
+                        {/* Clean Distance and Sort Controls - No Heavy Container */}
+                        <VStack space="md" mb={AppTheme.spacing.lg}>
+                            {/* Distance Slider Section */}
+                            <VStack space="xs">
+                                <HStack justifyContent="space-between" alignItems="center">
+                                    <HStack alignItems="center" space="xs">
+                                        <Icon
+                                            name="place"
+                                            size={18}
+                                            color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                        />
+                                        <Text
+                                            fontSize={AppTheme.typography.fontSizes.sm}
+                                            color={
+                                                isDark
+                                                    ? AppTheme.colors.text.dark.secondary
+                                                    : AppTheme.colors.text.secondary
+                                            }
+                                            fontWeight="500"
+                                        >
+                                            Distance
+                                        </Text>
+                                    </HStack>
+                                    <Text
+                                        fontSize={AppTheme.typography.fontSizes.md}
+                                        fontWeight="700"
+                                        color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                    >
+                                        {maxDistance} miles
+                                    </Text>
+                                </HStack>
+
+                                {/* Slider without container */}
+                                <Slider
+                                    style={{ width: '100%', height: 40 }}
+                                    minimumValue={1}
+                                    maximumValue={50}
+                                    step={1}
+                                    value={maxDistance}
+                                    onValueChange={setMaxDistance}
+                                    minimumTrackTintColor={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                    maximumTrackTintColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
+                                    thumbStyle={{
+                                        backgroundColor: isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600],
+                                        width: 20,
+                                        height: 20,
+                                        shadowColor: "#000000",
+                                        shadowOffset: { width: 0, height: 2 },
+                                        shadowOpacity: 0.25,
+                                        shadowRadius: 4,
+                                        elevation: 3,
+                                    }}
+                                    trackStyle={{
+                                        height: 6,
+                                        borderRadius: 3,
+                                    }}
+                                />
+
+                                <HStack justifyContent="space-between">
+                                    <Text
+                                        fontSize={AppTheme.typography.fontSizes.xs}
+                                        color={
+                                            isDark
+                                                ? AppTheme.colors.text.dark.muted
+                                                : AppTheme.colors.text.muted
+                                        }
+                                    >
+                                        1 mile
+                                    </Text>
+                                    <Text
+                                        fontSize={AppTheme.typography.fontSizes.xs}
+                                        color={
+                                            isDark
+                                                ? AppTheme.colors.text.dark.muted
+                                                : AppTheme.colors.text.muted
+                                        }
+                                    >
+                                        50+ miles
+                                    </Text>
+                                </HStack>
                             </VStack>
 
-                            <Pressable>
-                                <HStack alignItems="center" space="xs"
-                                    backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
-                                    borderRadius={AppTheme.borderRadius.lg}
-                                    px={AppTheme.spacing.md}
-                                    py={AppTheme.spacing.sm}
-                                    borderWidth={1}
-                                    borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
-                                >
+                            {/* Sort Dropdown Section - Cleaner Design */}
+                            <VStack space="xs" position="relative">
+                                <HStack alignItems="center" space="xs" mb={AppTheme.spacing.xs}>
+                                    <Icon
+                                        name="sort"
+                                        size={18}
+                                        color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                    />
                                     <Text
                                         fontSize={AppTheme.typography.fontSizes.sm}
-                                        color={AppTheme.colors.blue[600]}
+                                        color={
+                                            isDark
+                                                ? AppTheme.colors.text.dark.secondary
+                                                : AppTheme.colors.text.secondary
+                                        }
                                         fontWeight="500"
                                     >
-                                        Distance
+                                        Sort by
                                     </Text>
-                                    <Icon name="keyboard-arrow-down" size={16} color={AppTheme.colors.blue[600]} />
                                 </HStack>
-                            </Pressable>
-                        </HStack>
+
+                                <Pressable onPress={() => setShowSortDropdown(!showSortDropdown)}>
+                                    <Box
+                                        backgroundColor={
+                                            isDark ? AppTheme.colors.dark.surface : "#ffffff"
+                                        }
+                                        borderRadius={AppTheme.borderRadius.lg}
+                                        px={AppTheme.spacing.md}
+                                        py={AppTheme.spacing.sm}
+                                        borderWidth={1}
+                                        borderColor={
+                                            showSortDropdown
+                                                ? isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]
+                                                : isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]
+                                        }
+                                        shadowColor="#000000"
+                                        shadowOffset={{ width: 0, height: 1 }}
+                                        shadowOpacity={isDark ? 0.2 : 0.05}
+                                        shadowRadius={2}
+                                        elevation={1}
+                                    >
+                                        <HStack alignItems="center" justifyContent="space-between">
+                                            <HStack alignItems="center" space="sm" flex={1}>
+                                                <Icon
+                                                    name={getCurrentSortOption().icon}
+                                                    size={18}
+                                                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                                />
+                                                <Text
+                                                    fontSize={AppTheme.typography.fontSizes.sm}
+                                                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                                    fontWeight="500"
+                                                >
+                                                    {getCurrentSortOption().label}
+                                                </Text>
+                                            </HStack>
+                                            <Icon
+                                                name={showSortDropdown ? "keyboard-arrow-up" : "keyboard-arrow-down"}
+                                                size={20}
+                                                color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                            />
+                                        </HStack>
+                                    </Box>
+                                </Pressable>
+
+                                {/* Dropdown Menu */}
+                                {showSortDropdown && (
+                                    <Box
+                                        position="absolute"
+                                        top={85}
+                                        left={0}
+                                        right={0}
+                                        backgroundColor={
+                                            isDark ? AppTheme.colors.dark.surface : "#ffffff"
+                                        }
+                                        borderRadius={AppTheme.borderRadius.lg}
+                                        borderWidth={1}
+                                        borderColor={
+                                            isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[200]
+                                        }
+                                        shadowColor="#000000"
+                                        shadowOffset={{ width: 0, height: 4 }}
+                                        shadowOpacity={isDark ? 0.3 : 0.1}
+                                        shadowRadius={8}
+                                        elevation={5}
+                                        zIndex={1000}
+                                        overflow="hidden"
+                                    >
+                                        {sortOptions.map((option, index) => (
+                                            <Pressable
+                                                key={option.value}
+                                                onPress={() => {
+                                                    setSortBy(option.value as 'distance' | 'rating' | 'popularity');
+                                                    setShowSortDropdown(false);
+                                                }}
+                                            >
+                                                <Box
+                                                    px={AppTheme.spacing.md}
+                                                    py={AppTheme.spacing.sm}
+                                                    borderBottomWidth={index < sortOptions.length - 1 ? 1 : 0}
+                                                    borderBottomColor={
+                                                        isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[100]
+                                                    }
+                                                    backgroundColor={
+                                                        sortBy === option.value
+                                                            ? isDark
+                                                                ? AppTheme.colors.dark.background
+                                                                : AppTheme.colors.blue[50]
+                                                            : "transparent"
+                                                    }
+                                                >
+                                                    <HStack alignItems="center" space="sm">
+                                                        <Icon
+                                                            name={option.icon}
+                                                            size={18}
+                                                            color={
+                                                                sortBy === option.value
+                                                                    ? isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]
+                                                                    : isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle
+                                                            }
+                                                        />
+                                                        <Text
+                                                            fontSize={AppTheme.typography.fontSizes.sm}
+                                                            color={
+                                                                sortBy === option.value
+                                                                    ? isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]
+                                                                    : isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary
+                                                            }
+                                                            fontWeight={sortBy === option.value ? "600" : "400"}
+                                                            flex={1}
+                                                        >
+                                                            {option.label}
+                                                        </Text>
+                                                        {sortBy === option.value && (
+                                                            <Icon
+                                                                name="check"
+                                                                size={16}
+                                                                color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                                            />
+                                                        )}
+                                                    </HStack>
+                                                </Box>
+                                            </Pressable>
+                                        ))}
+                                    </Box>
+                                )}
+                            </VStack>
+                        </VStack>
 
                         {/* Results Count */}
-                        <Text
-                            fontSize={AppTheme.typography.fontSizes.sm}
-                            color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
-                            mb={AppTheme.spacing.md}
-                        >
-                            {filteredBusinesses.length} businesses found
-                        </Text>
+                        <HStack justifyContent="space-between" alignItems="center" mb={AppTheme.spacing.md}>
+                            <Text
+                                fontSize={AppTheme.typography.fontSizes.sm}
+                                color={
+                                    isDark
+                                        ? AppTheme.colors.text.dark.subtle
+                                        : AppTheme.colors.text.subtle
+                                }
+                            >
+                                {filteredBusinesses.length} businesses found
+                            </Text>
+                            {filteredBusinesses.length > 0 && (
+                                <HStack alignItems="center" space="xs">
+                                    <Icon
+                                        name="filter-list"
+                                        size={16}
+                                        color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                    />
+                                    <Text
+                                        fontSize={AppTheme.typography.fontSizes.xs}
+                                        color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                        fontWeight="500"
+                                    >
+                                        Within {maxDistance} miles
+                                    </Text>
+                                </HStack>
+                            )}
+                        </HStack>
 
                         {/* Business List */}
                         <VStack space="md">

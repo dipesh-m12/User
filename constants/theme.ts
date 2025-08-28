@@ -52,7 +52,13 @@ export const AppTheme = {
       primary: '#1e3a8a',     // Dark blue for headings
       secondary: '#3b82f6',   // Medium blue for body text
       subtle: '#60a5fa',      // Light blue for subtle text
-      muted: '#93c5fd',       // Very light blue for muted text
+      muted: '#93c5fd',  
+      dark : {
+        primary: "#ffffff", // White for dark mode headings
+        secondary: "#e2e8f0", // Light gray for body text
+        subtle: "#94a3b8", // Medium gray for subtle text
+        muted: "#64748b", // Darker gray for muted text
+      }     // Very light blue for muted text
     },
     icon: {
       primary: '#2563eb',     // Main icons
@@ -71,6 +77,13 @@ export const AppTheme = {
       700: '#374151',
       800: '#1f2937',
       900: '#111827',
+    },
+    dark: {
+      background: "#0f172a", // Main dark background
+      surface: "#1e293b", // Card/surface background
+      surfaceLight: "#334155", // Lighter surface for contrast
+      border: "#475569", // Border color
+      accent: "#60a5fa", // Accent color that works on dark
     },
     success: {
   50:  '#ecfdf5',
@@ -113,9 +126,12 @@ error: {
 gradients: {
     primary: ['#2563eb', '#1e40af'] as const,  // QVuew icon and buttons
     background: ['#f0f9ff', '#e0f2fe'] as const,
+    darkBackground: ["#0f172a", "#1e293b"] as const,
+    darkSurface: ["#1e293b", "#334155"] as const,
     light: ['#dbeafe', '#bfdbfe'] as const,
     dark: ['#1e3a8a', '#1e40af'] as const,
     button: ['#3b82f6', '#1d4ed8'] as const,   // login button if needed
+    darkButton: ["#60a5fa", "#3b82f6"] as const,
   },
   spacing: {
     xs: 4,
@@ -155,6 +171,20 @@ gradients: {
       shadowOpacity: 0.25,
       shadowRadius: 16,
       elevation: 8,
+    },
+    darkSm: {
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.3,
+      shadowRadius: 4,
+      elevation: 2,
+    },
+    darkMd: {
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.4,
+      shadowRadius: 8,
+      elevation: 4,
     },
   },
   typography: {

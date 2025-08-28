@@ -1,3 +1,4 @@
+import { CommonHeader } from '@/components/CommonHeader';
 import { AppTheme } from '@/constants/theme';
 import { Box, Heading, HStack, Pressable, ScrollView, Text, VStack } from '@gluestack-ui/themed';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -6,7 +7,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { HistoryDetailModal } from '../../components/HistoryDetailModal';
 import { useTheme } from '../../components/ThemeProvider';
 import { mockHistoryTickets, type HistoryTicket } from '../../constants/history';
-import { CommonHeader } from '@/components/CommonHeader';
 
 const formatCurrency = (amount: number): string => {
     return new Intl.NumberFormat('en-IN', {
@@ -52,6 +52,7 @@ export default function HistoryScreen() {
                 elevation={3}
             >
                 <HStack justifyContent="space-between" alignItems="flex-start" mb={AppTheme.spacing.sm}>
+                    {/* Left Section */}
                     <VStack flex={1}>
                         <Text
                             fontSize={AppTheme.typography.fontSizes.lg}
@@ -73,14 +74,14 @@ export default function HistoryScreen() {
 
                         <HStack alignItems="center" space="xs">
                             <Box
-                                backgroundColor={AppTheme.colors.success[200]}
+                                backgroundColor={isDark ? AppTheme.colors.success[900] : AppTheme.colors.success[200]}
                                 borderRadius={AppTheme.borderRadius.sm}
                                 px={AppTheme.spacing.sm}
                                 py={2}
                             >
                                 <Text
                                     fontSize={AppTheme.typography.fontSizes.xs}
-                                    color={AppTheme.colors.success[600]}
+                                    color={isDark ? AppTheme.colors.success[400] : AppTheme.colors.success[600]}
                                     fontWeight="600"
                                 >
                                     {ticket.status}
@@ -89,6 +90,7 @@ export default function HistoryScreen() {
                         </HStack>
                     </VStack>
 
+                    {/* Right Section */}
                     <VStack alignItems="flex-end">
                         <Text
                             fontSize={AppTheme.typography.fontSizes.sm}
@@ -100,13 +102,14 @@ export default function HistoryScreen() {
                         <Text
                             fontSize={AppTheme.typography.fontSizes.lg}
                             fontWeight="700"
-                            color={AppTheme.colors.blue[600]}
+                            color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]}
                         >
                             {ticket.totalAmount === 0 ? 'Free' : formatCurrency(ticket.totalAmount)}
                         </Text>
                     </VStack>
                 </HStack>
 
+                {/* Chevron */}
                 <HStack justifyContent="flex-end" alignItems="center">
                     <Icon
                         name="chevron-right"
@@ -122,40 +125,13 @@ export default function HistoryScreen() {
         <Box flex={1} backgroundColor={isDark ? AppTheme.colors.gray[900] : AppTheme.colors.blue[50]}>
             <CommonHeader />
             <LinearGradient
-                colors={isDark ? AppTheme.gradients.dark : AppTheme.gradients.background}
+                colors={isDark ? AppTheme.gradients.darkBackground : AppTheme.gradients.background}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={{ flex: 1 }}
             >
                 <ScrollView flex={1} showsVerticalScrollIndicator={false}>
                     <VStack flex={1} px={AppTheme.spacing.lg} pt={AppTheme.spacing['2xl']} pb={AppTheme.spacing.xl}>
-
-                        {/* Header */}
-                        <HStack alignItems="center" justifyContent="space-between" mb={AppTheme.spacing.xl}>
-                            <VStack flex={1}>
-                                <Heading
-                                    size="xl"
-                                    color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
-                                    fontWeight="700"
-                                >
-                                    QVuew Scanner
-                                </Heading>
-                                <Text
-                                    color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
-                                    fontSize={AppTheme.typography.fontSizes.md}
-                                >
-                                    Scan QR codes to join queues
-                                </Text>
-                            </VStack>
-
-                            <Box
-                                backgroundColor={AppTheme.colors.blue[600]}
-                                borderRadius={AppTheme.borderRadius.lg}
-                                p={AppTheme.spacing.md}
-                            >
-                                <Icon name="qr-code" size={24} color="#ffffff" />
-                            </Box>
-                        </HStack>
 
                         {/* History Title */}
                         <Heading
@@ -172,7 +148,7 @@ export default function HistoryScreen() {
                             {mockHistoryTickets.map((ticket) => renderHistoryCard(ticket))}
                         </VStack>
 
-                        {/* Empty State (if no tickets) */}
+                        {/* Empty State */}
                         {mockHistoryTickets.length === 0 && (
                             <VStack alignItems="center" justifyContent="center" py={AppTheme.spacing['2xl']}>
                                 <Icon

@@ -24,14 +24,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { useAuth } from '../components/auth/AuthContext';
 import { useTheme } from '../components/ThemeProvider';
 
-const GRADIENTS = {
-  background: {
-    light: ['#f0f9ff', '#e0f2fe'] as const,
-    dark: ['#111827', '#1f2937'] as const,
-  },
-  button: ['#3b82f6', '#1d4ed8'] as const,
-} as const;
-
 export default function LoginScreen() {
   const { login } = useAuth();
   const { isDark } = useTheme();
@@ -88,11 +80,11 @@ export default function LoginScreen() {
   const handleAppleLogin = () => console.log('Apple login');
 
   return (
-    <Box flex={1} backgroundColor={isDark ? AppTheme.colors.gray[900] : AppTheme.colors.blue[50]}>
+    <Box flex={1} backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]}>
       <LinearGradient
-        colors={isDark ? GRADIENTS.background.dark : GRADIENTS.background.light}
+        colors={isDark ? AppTheme.gradients.darkBackground : AppTheme.gradients.background}
         start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }} // ✅ LEFT TO RIGHT GRADIENT
+        end={{ x: 1, y: 0 }}
         style={{ flex: 1 }}
       >
         <ScrollView flex={1} showsVerticalScrollIndicator={false}>
@@ -103,10 +95,10 @@ export default function LoginScreen() {
                 <HStack alignItems="center" space="xs">
                   <ArrowLeftIcon
                     size="md"
-                    color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]}
+                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                   />
                   <Text
-                    color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]}
+                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                     fontSize={AppTheme.typography.fontSizes.md}
                     fontWeight="500"
                   >
@@ -120,14 +112,14 @@ export default function LoginScreen() {
             <VStack mb={AppTheme.spacing['2xl']}>
               <Heading
                 size="3xl"
-                color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
+                color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                 fontWeight="700"
                 mb={AppTheme.spacing.sm}
               >
                 Welcome Back
               </Heading>
               <Text
-                color={isDark ? AppTheme.colors.blue[300] : AppTheme.colors.blue[600]}
+                color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                 fontSize={AppTheme.typography.fontSizes.md}
               >
                 Sign in to your QVuew account
@@ -135,11 +127,11 @@ export default function LoginScreen() {
             </VStack>
 
             <VStack space="lg">
-              {/* Email Field with Icon (icon left) */}
+              {/* Email Field with Icon */}
               <FormControl isInvalid={!!errors.emailOrPhone}>
                 <Box
-                  backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-                  borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+                  backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+                  borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
                   borderRadius={AppTheme.borderRadius.lg}
                   borderWidth={1}
                   h={56}
@@ -150,7 +142,7 @@ export default function LoginScreen() {
                     <Icon
                       name="email"
                       size={20}
-                      color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[500]}
+                      color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[500]}
                       style={{ marginRight: AppTheme.spacing.sm }}
                     />
                     <Input
@@ -166,9 +158,9 @@ export default function LoginScreen() {
                         onChangeText={(value) => handleInputChange('emailOrPhone', value)}
                         keyboardType="email-address"
                         autoCapitalize="none"
-                        color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                        color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                         fontSize={AppTheme.typography.fontSizes.md}
-                        placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                        placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.text.muted}
                       />
                     </Input>
                   </HStack>
@@ -182,11 +174,11 @@ export default function LoginScreen() {
                 )}
               </FormControl>
 
-              {/* Password Field (lock icon left, eye icon right) */}
+              {/* Password Field */}
               <FormControl isInvalid={!!errors.password}>
                 <Box
-                  backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-                  borderColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[300]}
+                  backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+                  borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
                   borderRadius={AppTheme.borderRadius.lg}
                   borderWidth={1}
                   h={56}
@@ -197,7 +189,7 @@ export default function LoginScreen() {
                     <Icon
                       name="lock"
                       size={20}
-                      color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[500]}
+                      color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[500]}
                       style={{ marginRight: AppTheme.spacing.sm }}
                     />
                     <Input
@@ -212,9 +204,9 @@ export default function LoginScreen() {
                         value={formData.password}
                         onChangeText={(value) => handleInputChange('password', value)}
                         secureTextEntry={!showPassword}
-                        color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                        color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                         fontSize={AppTheme.typography.fontSizes.md}
-                        placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[400]}
+                        placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.text.muted}
                       />
                     </Input>
                     <Pressable
@@ -225,7 +217,7 @@ export default function LoginScreen() {
                       <Icon
                         name={showPassword ? "visibility-off" : "visibility"}
                         size={20}
-                        color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[500]}
+                        color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[500]}
                       />
                     </Pressable>
                   </HStack>
@@ -243,7 +235,7 @@ export default function LoginScreen() {
               <HStack justifyContent="flex-end" mt={AppTheme.spacing.sm}>
                 <Pressable onPress={() => router.push('/forgot-password')}>
                   <Text
-                    color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]}
+                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                     fontSize={AppTheme.typography.fontSizes.sm}
                     fontWeight="500"
                     textDecorationLine="underline"
@@ -260,9 +252,9 @@ export default function LoginScreen() {
                 mt={AppTheme.spacing.lg}
               >
                 <LinearGradient
-                  colors={GRADIENTS.button}
+                  colors={isDark ? AppTheme.gradients.darkButton : AppTheme.gradients.button}
                   start={{ x: 0, y: 0 }}
-                  end={{ x: 1, y: 0 }} // ✅ Gradient left to right
+                  end={{ x: 1, y: 0 }}
                   style={{
                     height: 56,
                     borderRadius: AppTheme.borderRadius.lg,
@@ -270,7 +262,7 @@ export default function LoginScreen() {
                     alignItems: 'center',
                     shadowColor: AppTheme.colors.blue[600],
                     shadowOffset: { width: 0, height: 4 },
-                    shadowOpacity: 0.3,
+                    shadowOpacity: isDark ? 0.4 : 0.3,
                     shadowRadius: 8,
                     elevation: 4,
                     opacity: isSubmitting ? 0.7 : 1,
@@ -288,24 +280,32 @@ export default function LoginScreen() {
 
               {/* Divider */}
               <HStack alignItems="center" my={AppTheme.spacing.xl}>
-                <Box flex={1} height={1} backgroundColor={isDark ? AppTheme.colors.gray[600] : AppTheme.colors.gray[300]} />
+                <Box
+                  flex={1}
+                  height={1}
+                  backgroundColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
+                />
                 <Text
                   px={AppTheme.spacing.md}
-                  color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                  color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                   fontSize={AppTheme.typography.fontSizes.sm}
                   fontWeight="500"
                 >
                   OR
                 </Text>
-                <Box flex={1} height={1} backgroundColor={isDark ? AppTheme.colors.gray[600] : AppTheme.colors.gray[300]} />
+                <Box
+                  flex={1}
+                  height={1}
+                  backgroundColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
+                />
               </HStack>
 
               {/* Social Login Buttons */}
               <VStack space="sm">
                 <Pressable onPress={handleGoogleLogin}>
                   <Box
-                    backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
-                    borderColor={isDark ? AppTheme.colors.gray[600] : AppTheme.colors.gray[300]}
+                    backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
+                    borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
                     borderWidth={1}
                     borderRadius={AppTheme.borderRadius.lg}
                     h={56}
@@ -317,7 +317,7 @@ export default function LoginScreen() {
                         G
                       </Text>
                       <ButtonText
-                        color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}
+                        color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary}
                         fontWeight="500"
                         fontSize={AppTheme.typography.fontSizes.md}
                       >
@@ -351,14 +351,14 @@ export default function LoginScreen() {
               {/* Sign Up Link */}
               <HStack justifyContent="center" alignItems="center" mt={AppTheme.spacing.xl}>
                 <Text
-                  color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                  color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                   fontSize={AppTheme.typography.fontSizes.sm}
                 >
                   Don&apos;t have an account?{' '}
                 </Text>
                 <Pressable onPress={() => router.push('/signup')}>
                   <Text
-                    color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]}
+                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                     fontSize={AppTheme.typography.fontSizes.sm}
                     fontWeight="600"
                     textDecorationLine="underline"

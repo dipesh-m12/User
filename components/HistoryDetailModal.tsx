@@ -48,17 +48,20 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                         <Icon
                             name="star"
                             size={40}
-                            color={star <= rating ? "#FFB800" : AppTheme.colors.gray[300]}
+                            color={star <= rating ? "#FFB800" : (isDark ? AppTheme.colors.gray[600] : AppTheme.colors.gray[300])}
                         />
                     </Pressable>
                 ))}
             </HStack>
 
-            {/* ✅ Dynamic Rating Label */}
+            {/* ✅ Dynamic Rating Label with proper dark mode text colors */}
             <Text
                 fontSize={AppTheme.typography.fontSizes.lg}
                 fontWeight="600"
-                color={rating > 0 ? AppTheme.colors.blue[600] : isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                color={rating > 0 ?
+                    (isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]) :
+                    (isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle)
+                }
                 textAlign="center"
                 mt={AppTheme.spacing.sm}
             >
@@ -89,22 +92,21 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
         >
             <Box flex={1} backgroundColor="rgba(0,0,0,0.5)" justifyContent="flex-end">
                 <Box
-                    backgroundColor={isDark ? AppTheme.colors.gray[900] : "#ffffff"}
+                    backgroundColor={isDark ? AppTheme.colors.dark.background : "#ffffff"}
                     borderTopLeftRadius={20}
                     borderTopRightRadius={20}
-                    // ✅ Increased Opening Size - Now 95% of screen height
                     height={screenHeight * 0.75}
                     minHeight={600}
                 >
                     {/* Header */}
-                    <Box p={AppTheme.spacing.lg} borderBottomWidth={1} borderBottomColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[200]}>
+                    <Box p={AppTheme.spacing.lg} borderBottomWidth={1} borderBottomColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[200]}>
                         <HStack justifyContent="space-between" alignItems="flex-start">
                             <HStack alignItems="center" space="md" flex={1}>
                                 {/* Business Icon */}
                                 <Box
                                     w={50}
                                     h={50}
-                                    backgroundColor={AppTheme.colors.gray[200]}
+                                    backgroundColor={isDark ? AppTheme.colors.dark.surfaceLight : AppTheme.colors.gray[200]}
                                     borderRadius={AppTheme.borderRadius.lg}
                                     alignItems="center"
                                     justifyContent="center"
@@ -112,7 +114,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                     <Text
                                         fontSize={AppTheme.typography.fontSizes.lg}
                                         fontWeight="700"
-                                        color={AppTheme.colors.gray[700]}
+                                        color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.gray[700]}
                                     >
                                         {ticket.businessName.charAt(0)}
                                     </Text>
@@ -122,7 +124,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                     <Text
                                         fontSize={AppTheme.typography.fontSizes.lg}
                                         fontWeight="700"
-                                        color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                                        color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                                         mb={AppTheme.spacing.xs}
                                     >
                                         {ticket.businessName}
@@ -147,7 +149,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                             </HStack>
 
                             <Pressable onPress={onClose} p={AppTheme.spacing.xs}>
-                                <Icon name="close" size={24} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]} />
+                                <Icon name="close" size={24} color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.gray[600]} />
                             </Pressable>
                         </HStack>
                     </Box>
@@ -165,7 +167,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                 <Text
                                     fontSize={AppTheme.typography.fontSizes.md}
                                     fontWeight="700"
-                                    color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                                     mb={AppTheme.spacing.sm}
                                 >
                                     Visit Details
@@ -175,14 +177,14 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                     <HStack justifyContent="space-between" py={AppTheme.spacing.xs}>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                                            color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                                             fontWeight="500"
                                         >
                                             Date & Time
                                         </Text>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                            color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary}
                                             textAlign="right"
                                             flex={1}
                                             ml={AppTheme.spacing.md}
@@ -194,14 +196,14 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                     <HStack justifyContent="space-between" py={AppTheme.spacing.xs}>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                                            color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                                             fontWeight="500"
                                         >
                                             Queue Position
                                         </Text>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                            color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary}
                                             fontWeight="600"
                                         >
                                             #{ticket.queuePosition}
@@ -211,14 +213,14 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                     <HStack justifyContent="space-between" py={AppTheme.spacing.xs}>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                                            color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                                             fontWeight="500"
                                         >
                                             Wait Time
                                         </Text>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                            color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary}
                                         >
                                             {ticket.waitTime} minutes
                                         </Text>
@@ -231,7 +233,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                 <Text
                                     fontSize={AppTheme.typography.fontSizes.md}
                                     fontWeight="700"
-                                    color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                                     mb={AppTheme.spacing.sm}
                                 >
                                     Services
@@ -244,13 +246,13 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                                 <Text
                                                     fontSize={AppTheme.typography.fontSizes.md}
                                                     fontWeight="600"
-                                                    color={isDark ? AppTheme.colors.gray[100] : AppTheme.colors.gray[900]}
+                                                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                                                 >
                                                     {service.name}
                                                 </Text>
                                                 <Text
                                                     fontSize={AppTheme.typography.fontSizes.sm}
-                                                    color={AppTheme.colors.blue[600]}
+                                                    color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                                                     mt={AppTheme.spacing.xs}
                                                 >
                                                     Est. time: {service.duration} mins
@@ -259,7 +261,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                             <Text
                                                 fontSize={AppTheme.typography.fontSizes.md}
                                                 fontWeight="700"
-                                                color={AppTheme.colors.blue[600]}
+                                                color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                                             >
                                                 ₹{service.price}
                                             </Text>
@@ -267,17 +269,17 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                     ))}
                                 </VStack>
 
-                                {/* ✅ Enhanced Total with Light Blue Highlight Box */}
+                                {/* ✅ Enhanced Total with proper dark mode background */}
                                 <Box
-                                    backgroundColor={AppTheme.colors.blue[50]}
+                                    backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.blue[50]}
                                     borderRadius={AppTheme.borderRadius.lg}
                                     p={AppTheme.spacing.md}
                                     mt={AppTheme.spacing.md}
                                     borderWidth={2}
-                                    borderColor={AppTheme.colors.blue[200]}
+                                    borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.blue[200]}
                                     shadowColor="#000000"
                                     shadowOffset={{ width: 0, height: 2 }}
-                                    shadowOpacity={0.1}
+                                    shadowOpacity={isDark ? 0.3 : 0.1}
                                     shadowRadius={4}
                                     elevation={3}
                                 >
@@ -285,14 +287,14 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.lg}
                                             fontWeight="700"
-                                            color={AppTheme.colors.blue[900]}
+                                            color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
                                         >
                                             Total
                                         </Text>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes['lg']}
                                             fontWeight="700"
-                                            color={AppTheme.colors.blue[700]}
+                                            color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[700]}
                                         >
                                             ₹{ticket.totalAmount}
                                         </Text>
@@ -305,7 +307,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                 <Text
                                     fontSize={AppTheme.typography.fontSizes.lg}
                                     fontWeight="700"
-                                    color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
                                 >
                                     Your Feedback
                                 </Text>
@@ -313,7 +315,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                 <VStack space="md">
                                     <Text
                                         fontSize={AppTheme.typography.fontSizes.md}
-                                        color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                                        color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.text.subtle}
                                         textAlign="center"
                                     >
                                         How was your experience at {ticket.businessName}?
@@ -323,7 +325,7 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.md}
                                             fontWeight="600"
-                                            color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[800]}
+                                            color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary}
                                             textAlign="center"
                                             mb={AppTheme.spacing.sm}
                                         >
@@ -336,15 +338,15 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.sm}
                                             fontWeight="600"
-                                            color={isDark ? AppTheme.colors.gray[300] : AppTheme.colors.gray[700]}
+                                            color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.text.secondary}
                                         >
                                             Additional Comments (Optional)
                                         </Text>
                                         <Box
-                                            backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
+                                            backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
                                             borderRadius={AppTheme.borderRadius.lg}
                                             borderWidth={1}
-                                            borderColor={isDark ? AppTheme.colors.gray[600] : AppTheme.colors.gray[300]}
+                                            borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
                                             p={AppTheme.spacing.md}
                                             minHeight={120}
                                         >
@@ -355,15 +357,15 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                                                     onChangeText={setFeedback}
                                                     multiline={true}
                                                     numberOfLines={5}
-                                                    color={isDark ? AppTheme.colors.gray[100] : AppTheme.colors.gray[900]}
-                                                    placeholderTextColor={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[500]}
+                                                    color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.text.primary}
+                                                    placeholderTextColor={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.text.muted}
                                                     textAlignVertical="top"
                                                 />
                                             </Input>
                                         </Box>
                                         <Text
                                             fontSize={AppTheme.typography.fontSizes.xs}
-                                            color={isDark ? AppTheme.colors.gray[500] : AppTheme.colors.gray[500]}
+                                            color={isDark ? AppTheme.colors.text.dark.muted : AppTheme.colors.text.muted}
                                         >
                                             Share your thoughts to help improve the service • {feedback.length}/500
                                         </Text>
@@ -371,7 +373,10 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
 
                                     {/* Submit Feedback Button */}
                                     <Button
-                                        backgroundColor={rating > 0 ? AppTheme.colors.blue[600] : AppTheme.colors.gray[400]}
+                                        backgroundColor={rating > 0 ?
+                                            (isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]) :
+                                            AppTheme.colors.gray[400]
+                                        }
                                         borderRadius={AppTheme.borderRadius.lg}
                                         h={52}
                                         onPress={submitFeedback}
@@ -394,9 +399,9 @@ export const HistoryDetailModal: React.FC<HistoryDetailModalProps> = ({
                     {/* Fixed Bottom Close Button */}
                     <Box
                         p={AppTheme.spacing.lg}
-                        backgroundColor={isDark ? AppTheme.colors.gray[900] : "#ffffff"}
+                        backgroundColor={isDark ? AppTheme.colors.dark.background : "#ffffff"}
                         borderTopWidth={1}
-                        borderTopColor={isDark ? AppTheme.colors.gray[700] : AppTheme.colors.gray[200]}
+                        borderTopColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[200]}
                     >
                         <Button
                             backgroundColor={AppTheme.colors.gray[500]}

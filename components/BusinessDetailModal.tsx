@@ -37,7 +37,7 @@ export const BusinessDetailModal: React.FC<BusinessDetailModalProps> = ({
 
         {/* Modal Container */}
         <Box
-          backgroundColor={isDark ? AppTheme.colors.gray[900] : "#ffffff"}
+          backgroundColor={isDark ? AppTheme.colors.dark.background : "#ffffff"}
           borderTopLeftRadius={AppTheme.borderRadius.xl}
           borderTopRightRadius={AppTheme.borderRadius.xl}
           maxHeight={screenHeight * 0.9}
@@ -84,54 +84,7 @@ export const BusinessDetailModal: React.FC<BusinessDetailModalProps> = ({
             </HStack>
           </Box>
 
-          {/* Stats Bar - FIXED */}
-          <Box backgroundColor="#ffffff" p={AppTheme.spacing.md}>
-            <HStack justifyContent="space-around">
-              <VStack alignItems="center">
-                <HStack alignItems="center" space="xs">
-                  <Icon name="star" size={20} color="#FFB800" />
-                  <Text fontSize={AppTheme.typography.fontSizes.lg} fontWeight="700" color="#FFB800">
-                    {business.rating}
-                  </Text>
-                </HStack>
-                <Text fontSize={AppTheme.typography.fontSizes.xs} color={AppTheme.colors.gray[600]}>
-                  Rating
-                </Text>
-              </VStack>
 
-              <VStack alignItems="center">
-                <Text fontSize={AppTheme.typography.fontSizes.lg} fontWeight="700" color={AppTheme.colors.success[500]}>
-                  {business.distance}
-                </Text>
-                <Text fontSize={AppTheme.typography.fontSizes.xs} color={AppTheme.colors.gray[600]}>
-                  Miles Away
-                </Text>
-              </VStack>
-            </HStack>
-          </Box>
-
-          {/* Queue Info - FIXED */}
-          <Box backgroundColor={AppTheme.colors.blue[50]} p={AppTheme.spacing.md}>
-            <HStack justifyContent="space-around">
-              <VStack alignItems="center">
-                <Text fontSize={AppTheme.typography.fontSizes.xl} fontWeight="700" color="#FF9800">
-                  {business.queueCount}
-                </Text>
-                <Text fontSize={AppTheme.typography.fontSizes.xs} color={AppTheme.colors.gray[700]}>
-                  In Queue
-                </Text>
-              </VStack>
-
-              <VStack alignItems="center">
-                <Text fontSize={AppTheme.typography.fontSizes.xl} fontWeight="700" color="#9C27B0">
-                  {business.estimatedWait} mins
-                </Text>
-                <Text fontSize={AppTheme.typography.fontSizes.xs} color={AppTheme.colors.gray[700]}>
-                  Est. Wait
-                </Text>
-              </VStack>
-            </HStack>
-          </Box>
 
           {/* ✅ ALL CONTENT SECTIONS - SCROLLABLE */}
           <ScrollView
@@ -143,6 +96,54 @@ export const BusinessDetailModal: React.FC<BusinessDetailModalProps> = ({
             }}
             showsVerticalScrollIndicator={true}
           >
+            {/* Stats Bar - FIXED */}
+            <Box backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]} p={AppTheme.spacing.md}>
+              <HStack justifyContent="space-around">
+                <VStack alignItems="center">
+                  <HStack alignItems="center" space="xs">
+                    <Icon name="star" size={20} color="#FFB800" />
+                    <Text fontSize={AppTheme.typography.fontSizes.lg} fontWeight="700" color="#FFB800">
+                      {business.rating}
+                    </Text>
+                  </HStack>
+                  <Text fontSize={AppTheme.typography.fontSizes.xs} color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.gray[600]}>
+                    Rating
+                  </Text>
+                </VStack>
+
+                <VStack alignItems="center">
+                  <Text fontSize={AppTheme.typography.fontSizes.lg} fontWeight="700" color={AppTheme.colors.success[500]}>
+                    {business.distance}
+                  </Text>
+                  <Text fontSize={AppTheme.typography.fontSizes.xs} color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.gray[600]}>
+                    Miles Away
+                  </Text>
+                </VStack>
+              </HStack>
+            </Box>
+
+            {/* Queue Info - FIXED */}
+            <Box backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]} p={AppTheme.spacing.md}>
+              <HStack justifyContent="space-around">
+                <VStack alignItems="center">
+                  <Text fontSize={AppTheme.typography.fontSizes.xl} fontWeight="700" color="#FF9800">
+                    {business.queueCount}
+                  </Text>
+                  <Text fontSize={AppTheme.typography.fontSizes.xs} color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.gray[600]}>
+                    In Queue
+                  </Text>
+                </VStack>
+
+                <VStack alignItems="center">
+                  <Text fontSize={AppTheme.typography.fontSizes.xl} fontWeight="700" color="#9C27B0">
+                    {business.estimatedWait} mins
+                  </Text>
+                  <Text fontSize={AppTheme.typography.fontSizes.xs} color={isDark ? AppTheme.colors.text.dark.subtle : AppTheme.colors.gray[600]}>
+                    Est. Wait
+                  </Text>
+                </VStack>
+              </HStack>
+            </Box>
 
             {/* 1. OPERATING HOURS SECTION */}
             <VStack mb={AppTheme.spacing.xl}>
@@ -175,7 +176,7 @@ export const BusinessDetailModal: React.FC<BusinessDetailModalProps> = ({
 
             {/* 2. SERVICES SECTION */}
             <VStack mb={AppTheme.spacing.xl}>
-              <Heading size="md" color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]} mb={AppTheme.spacing.md}>
+              <Heading size="md" color={isDark ? AppTheme.colors.blue[50] : AppTheme.colors.gray[50]} mb={AppTheme.spacing.md}>
                 Available Services
               </Heading>
 
@@ -233,7 +234,7 @@ export const BusinessDetailModal: React.FC<BusinessDetailModalProps> = ({
               {business.reviews.map((review) => (
                 <Box
                   key={review.id}
-                  backgroundColor={isDark ? AppTheme.colors.gray[800] : AppTheme.colors.gray[50]}
+                  backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.gray[50]}
                   borderRadius={AppTheme.borderRadius.lg}
                   p={AppTheme.spacing.md}
                   mb={AppTheme.spacing.sm}
