@@ -131,11 +131,11 @@ export default function HistoryScreen() {
                 style={{ flex: 1 }}
             >
                 <ScrollView flex={1} showsVerticalScrollIndicator={false}>
-                    <VStack flex={1} px={AppTheme.spacing.lg} pt={AppTheme.spacing['2xl']} pb={AppTheme.spacing.xl}>
+                    <VStack flex={1} px={AppTheme.spacing.lg} pt={AppTheme.spacing['xl']} pb={AppTheme.spacing.xl}>
 
                         {/* History Title */}
                         <Heading
-                            size="2xl"
+                            size="xl"
                             color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
                             fontWeight="700"
                             mb={AppTheme.spacing.lg}

@@ -16,7 +16,6 @@ import { TermsOfServiceModal } from '../../components/TermsOfServiceModal';
 import { useTheme } from '../../components/ThemeProvider';
 import { mockUser, type User } from '../../constants/profileTypes';
 
-
 export default function ProfileScreen() {
     const { isDark } = useTheme();
     const [user] = useState<User>(mockUser);
@@ -25,12 +24,8 @@ export default function ProfileScreen() {
     const [showPrivacyPolicyModal, setShowPrivacyPolicyModal] = useState(false);
     const [showTermsModal, setShowTermsModal] = useState(false);
     const [showSecurityModal, setShowSecurityModal] = useState(false);
-    // console.log('showSecurityModal:', showSecurityModal);
     const [showHelpModal, setShowHelpModal] = useState(false);
     const [showLogoutModal, setShowLogoutModal] = useState(false);
-
-
-
 
     const handleLogout = () => {
         Alert.alert(
@@ -59,15 +54,15 @@ export default function ProfileScreen() {
             <HStack
                 alignItems="center"
                 space="md"
-                backgroundColor={isDark ? AppTheme.colors.dark.background : AppTheme.colors.blue[50]}
+                backgroundColor={isDark ? AppTheme.colors.gray[800] : "#FFFFFF"}
                 borderRadius={AppTheme.borderRadius.xl}
                 p={AppTheme.spacing.lg}
                 mb={AppTheme.spacing.sm}
-                shadowColor="#000000"
-                shadowOffset={{ width: 0, height: 1 }}
-                shadowOpacity={0.05}
-                shadowRadius={2}
-                elevation={2}
+                shadowColor="#000"
+                shadowOffset={{ width: 0, height: 2 }}
+                shadowOpacity={isDark ? 0.3 : 0.1}
+                shadowRadius={4}
+                elevation={3}
             >
                 <Box
                     w={40}
@@ -108,12 +103,11 @@ export default function ProfileScreen() {
                 style={{ flex: 1 }}
             >
                 <ScrollView flex={1} showsVerticalScrollIndicator={false}>
-                    <VStack flex={1} px={AppTheme.spacing.lg} pt={AppTheme.spacing['2xl']} pb={AppTheme.spacing.xl}>
-
+                    <VStack flex={1} px={AppTheme.spacing.lg} pt={AppTheme.spacing['xl']} pb={AppTheme.spacing.xl}>
 
                         {/* Profile Title */}
                         <Heading
-                            size="2xl"
+                            size="xl"
                             color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.blue[900]}
                             fontWeight="700"
                             mb={AppTheme.spacing.lg}
@@ -123,13 +117,13 @@ export default function ProfileScreen() {
 
                         {/* User Info Card */}
                         <Box
-                            backgroundColor={isDark ? AppTheme.colors.gray[800] : "#ffffff"}
+                            backgroundColor={isDark ? AppTheme.colors.gray[800] : "#FFFFFF"}
                             borderRadius={AppTheme.borderRadius.xl}
                             p={AppTheme.spacing.lg}
                             mb={AppTheme.spacing.lg}
-                            shadowColor="#000000"
+                            shadowColor="#000"
                             shadowOffset={{ width: 0, height: 2 }}
-                            shadowOpacity={0.1}
+                            shadowOpacity={isDark ? 0.3 : 0.1}
                             shadowRadius={4}
                             elevation={3}
                         >
@@ -211,7 +205,6 @@ export default function ProfileScreen() {
                                 '#ffffff',
                                 AppTheme.colors.success[500],
                                 'Security',
-
                                 () => {
                                     console.log('Security button pressed');
                                     setShowSecurityModal(true)
@@ -237,7 +230,8 @@ export default function ProfileScreen() {
                         </VStack>
                     </VStack>
                 </ScrollView>
-                {/* ✅ Modal rendered conditionally outside menu */}
+
+                {/* Confirmation Modal */}
                 <ConfirmationModal
                     isVisible={showLogoutModal}
                     onClose={() => setShowLogoutModal(false)}

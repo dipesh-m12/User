@@ -113,13 +113,13 @@ export default function ExploreScreen() {
                     <VStack
                         flex={1}
                         px={AppTheme.spacing.lg}
-                        pt={AppTheme.spacing['2xl']}
+                        pt={AppTheme.spacing['xl']}
                         pb={AppTheme.spacing.xl}
                     >
                         {/* Explore Section */}
                         <VStack space="lg" mb={AppTheme.spacing.xl}>
                             <Heading
-                                size="lg"
+                                size="xl"
                                 color={
                                     isDark
                                         ? AppTheme.colors.text.dark.primary
@@ -144,8 +144,10 @@ export default function ExploreScreen() {
                         {/* Location Status */}
                         <Box
                             backgroundColor={
-                                isDark ? AppTheme.colors.dark.surface : AppTheme.colors.success[50]
+                                isDark ? AppTheme.colors.dark.surface : "#E8F5E8"
                             }
+                            borderWidth={1}
+                            borderColor='#4CAF50'
                             borderRadius={AppTheme.borderRadius.lg}
                             p={AppTheme.spacing.md}
                             mb={AppTheme.spacing.lg}
@@ -154,16 +156,16 @@ export default function ExploreScreen() {
                                 <Icon
                                     name="location-on"
                                     size={20}
-                                    color={AppTheme.colors.success[500]}
+                                    color="#4CAF50"
                                 />
                                 <Text
                                     color={
                                         isDark
-                                            ? AppTheme.colors.success[400]
-                                            : AppTheme.colors.success[600]
+                                            ? "#81C784"
+                                            : "#2E7D32"
                                     }
                                     fontSize={AppTheme.typography.fontSizes.sm}
-                                    fontWeight="500"
+                                    fontWeight="600"
                                 >
                                     Location Active
                                 </Text>
@@ -172,19 +174,19 @@ export default function ExploreScreen() {
                                 color={
                                     isDark
                                         ? AppTheme.colors.text.dark.subtle
-                                        : AppTheme.colors.text.secondary
+                                        : "#4CAF50"
                                 }
                                 fontSize={AppTheme.typography.fontSizes.xs}
                                 mt={AppTheme.spacing.xs}
                             >
-                                Showing businesses within {maxDistance} miles
+                                Showing businesses within {maxDistance} miles of your location
                             </Text>
                         </Box>
 
                         {/* Search Bar */}
                         <Box
                             backgroundColor={
-                                isDark ? AppTheme.colors.dark.surface : "#ffffff"
+                                isDark ? AppTheme.colors.dark.surface : "#FFFFFF"
                             }
                             borderRadius={AppTheme.borderRadius.lg}
                             borderWidth={1}
@@ -192,6 +194,11 @@ export default function ExploreScreen() {
                                 isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]
                             }
                             mb={AppTheme.spacing.md}
+                            shadowColor="#000"
+                            shadowOffset={{ width: 0, height: 2 }}
+                            shadowOpacity={isDark ? 0.3 : 0.1}
+                            shadowRadius={4}
+                            elevation={2}
                         >
                             <HStack alignItems="center" px={AppTheme.spacing.md}>
                                 <Icon
@@ -243,7 +250,7 @@ export default function ExploreScreen() {
                                                     ? AppTheme.colors.blue[600]
                                                     : isDark
                                                         ? AppTheme.colors.dark.surface
-                                                        : "#ffffff"
+                                                        : "#FFFFFF"
                                             }
                                             borderRadius={AppTheme.borderRadius.full}
                                             px={AppTheme.spacing.md}
@@ -256,6 +263,11 @@ export default function ExploreScreen() {
                                                         ? AppTheme.colors.dark.border
                                                         : AppTheme.colors.gray[300]
                                             }
+                                            shadowColor="#000"
+                                            shadowOffset={{ width: 0, height: 1 }}
+                                            shadowOpacity={isDark ? 0.2 : 0.05}
+                                            shadowRadius={2}
+                                            elevation={1}
                                         >
                                             <Text
                                                 color={
@@ -276,89 +288,89 @@ export default function ExploreScreen() {
                             </HStack>
                         </ScrollView>
 
-                        {/* Clean Distance and Sort Controls - No Heavy Container */}
+                        {/* Clean Distance and Sort Controls */}
                         <VStack space="md" mb={AppTheme.spacing.lg}>
                             {/* Distance Slider Section */}
-                            <VStack space="xs">
-                                <HStack justifyContent="space-between" alignItems="center">
-                                    <HStack alignItems="center" space="xs">
-                                        <Icon
-                                            name="place"
-                                            size={18}
-                                            color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
-                                        />
+                            <Box
+                                backgroundColor={
+                                    isDark ? AppTheme.colors.dark.surface : "#FFFFFF"
+                                }
+                                borderRadius={AppTheme.borderRadius.lg}
+                                p={AppTheme.spacing.md}
+                                shadowColor="#000"
+                                shadowOffset={{ width: 0, height: 2 }}
+                                shadowOpacity={isDark ? 0.3 : 0.1}
+                                shadowRadius={4}
+                                elevation={2}
+                            >
+                                <VStack space="xs">
+                                    <HStack justifyContent="space-between" alignItems="center">
+                                        <HStack alignItems="center" space="xs">
+                                            <Icon
+                                                name="place"
+                                                size={18}
+                                                color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                            />
+                                            <Text
+                                                fontSize={AppTheme.typography.fontSizes.sm}
+                                                color={
+                                                    isDark
+                                                        ? AppTheme.colors.text.dark.secondary
+                                                        : AppTheme.colors.text.secondary
+                                                }
+                                                fontWeight="500"
+                                            >
+                                                Distance
+                                            </Text>
+                                        </HStack>
                                         <Text
-                                            fontSize={AppTheme.typography.fontSizes.sm}
-                                            color={
-                                                isDark
-                                                    ? AppTheme.colors.text.dark.secondary
-                                                    : AppTheme.colors.text.secondary
-                                            }
-                                            fontWeight="500"
+                                            fontSize={AppTheme.typography.fontSizes.md}
+                                            fontWeight="700"
+                                            color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
                                         >
-                                            Distance
+                                            {maxDistance} miles
                                         </Text>
                                     </HStack>
-                                    <Text
-                                        fontSize={AppTheme.typography.fontSizes.md}
-                                        fontWeight="700"
-                                        color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
-                                    >
-                                        {maxDistance} miles
-                                    </Text>
-                                </HStack>
 
-                                {/* Slider without container */}
-                                <Slider
-                                    style={{ width: '100%', height: 40 }}
-                                    minimumValue={1}
-                                    maximumValue={50}
-                                    step={1}
-                                    value={maxDistance}
-                                    onValueChange={setMaxDistance}
-                                    minimumTrackTintColor={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
-                                    maximumTrackTintColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
-                                    thumbStyle={{
-                                        backgroundColor: isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600],
-                                        width: 20,
-                                        height: 20,
-                                        shadowColor: "#000000",
-                                        shadowOffset: { width: 0, height: 2 },
-                                        shadowOpacity: 0.25,
-                                        shadowRadius: 4,
-                                        elevation: 3,
-                                    }}
-                                    trackStyle={{
-                                        height: 6,
-                                        borderRadius: 3,
-                                    }}
-                                />
+                                    {/* Fixed Slider */}
+                                    <Slider
+                                        style={{ width: '100%', height: 40 }}
+                                        minimumValue={1}
+                                        maximumValue={50}
+                                        step={1}
+                                        value={maxDistance}
+                                        onValueChange={setMaxDistance}
+                                        minimumTrackTintColor={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                        maximumTrackTintColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]}
+                                        thumbTintColor={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]}
+                                    />
 
-                                <HStack justifyContent="space-between">
-                                    <Text
-                                        fontSize={AppTheme.typography.fontSizes.xs}
-                                        color={
-                                            isDark
-                                                ? AppTheme.colors.text.dark.muted
-                                                : AppTheme.colors.text.muted
-                                        }
-                                    >
-                                        1 mile
-                                    </Text>
-                                    <Text
-                                        fontSize={AppTheme.typography.fontSizes.xs}
-                                        color={
-                                            isDark
-                                                ? AppTheme.colors.text.dark.muted
-                                                : AppTheme.colors.text.muted
-                                        }
-                                    >
-                                        50+ miles
-                                    </Text>
-                                </HStack>
-                            </VStack>
+                                    <HStack justifyContent="space-between">
+                                        <Text
+                                            fontSize={AppTheme.typography.fontSizes.xs}
+                                            color={
+                                                isDark
+                                                    ? AppTheme.colors.text.dark.muted
+                                                    : AppTheme.colors.text.muted
+                                            }
+                                        >
+                                            1 mile
+                                        </Text>
+                                        <Text
+                                            fontSize={AppTheme.typography.fontSizes.xs}
+                                            color={
+                                                isDark
+                                                    ? AppTheme.colors.text.dark.muted
+                                                    : AppTheme.colors.text.muted
+                                            }
+                                        >
+                                            50+ miles
+                                        </Text>
+                                    </HStack>
+                                </VStack>
+                            </Box>
 
-                            {/* Sort Dropdown Section - Cleaner Design */}
+                            {/* Sort Dropdown Section */}
                             <VStack space="xs" position="relative">
                                 <HStack alignItems="center" space="xs" mb={AppTheme.spacing.xs}>
                                     <Icon
@@ -382,7 +394,7 @@ export default function ExploreScreen() {
                                 <Pressable onPress={() => setShowSortDropdown(!showSortDropdown)}>
                                     <Box
                                         backgroundColor={
-                                            isDark ? AppTheme.colors.dark.surface : "#ffffff"
+                                            isDark ? AppTheme.colors.dark.surface : "#FFFFFF"
                                         }
                                         borderRadius={AppTheme.borderRadius.lg}
                                         px={AppTheme.spacing.md}
@@ -393,11 +405,11 @@ export default function ExploreScreen() {
                                                 ? isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[600]
                                                 : isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[300]
                                         }
-                                        shadowColor="#000000"
-                                        shadowOffset={{ width: 0, height: 1 }}
-                                        shadowOpacity={isDark ? 0.2 : 0.05}
-                                        shadowRadius={2}
-                                        elevation={1}
+                                        shadowColor="#000"
+                                        shadowOffset={{ width: 0, height: 2 }}
+                                        shadowOpacity={isDark ? 0.3 : 0.1}
+                                        shadowRadius={4}
+                                        elevation={2}
                                     >
                                         <HStack alignItems="center" justifyContent="space-between">
                                             <HStack alignItems="center" space="sm" flex={1}>
@@ -431,18 +443,18 @@ export default function ExploreScreen() {
                                         left={0}
                                         right={0}
                                         backgroundColor={
-                                            isDark ? AppTheme.colors.dark.surface : "#ffffff"
+                                            isDark ? AppTheme.colors.dark.surface : "#FFFFFF"
                                         }
                                         borderRadius={AppTheme.borderRadius.lg}
                                         borderWidth={1}
                                         borderColor={
                                             isDark ? AppTheme.colors.dark.border : AppTheme.colors.gray[200]
                                         }
-                                        shadowColor="#000000"
+                                        shadowColor="#000"
                                         shadowOffset={{ width: 0, height: 4 }}
-                                        shadowOpacity={isDark ? 0.3 : 0.1}
+                                        shadowOpacity={isDark ? 0.3 : 0.15}
                                         shadowRadius={8}
-                                        elevation={5}
+                                        elevation={8}
                                         zIndex={1000}
                                         overflow="hidden"
                                     >

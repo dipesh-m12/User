@@ -194,14 +194,14 @@ export default function QRScannerScreen() {
                             {/* Welcome Card */}
                             <Box
                                 backgroundColor={
-                                    isDark ? AppTheme.colors.gray[800] : AppTheme.colors.blue[50]
+                                    isDark ? AppTheme.colors.gray[800] : "#FFFFFF"
                                 }
                                 borderRadius={AppTheme.borderRadius.xl}
                                 p={AppTheme.spacing.lg}
                                 mb={AppTheme.spacing.xl}
                                 shadowColor="#000"
                                 shadowOffset={{ width: 0, height: 4 }}
-                                shadowOpacity={0.1}
+                                shadowOpacity={isDark ? 0.3 : 0.1}
                                 shadowRadius={8}
                                 elevation={4}
                             >
@@ -318,13 +318,13 @@ export default function QRScannerScreen() {
                             {/* How it works */}
                             <Box
                                 backgroundColor={
-                                    isDark ? AppTheme.colors.gray[800] : AppTheme.colors.blue[50]
+                                    isDark ? AppTheme.colors.gray[800] : "#FFFFFF"
                                 }
                                 borderRadius={AppTheme.borderRadius.xl}
                                 p={AppTheme.spacing.lg}
                                 shadowColor="#000"
                                 shadowOffset={{ width: 0, height: 4 }}
-                                shadowOpacity={0.1}
+                                shadowOpacity={isDark ? 0.3 : 0.1}
                                 shadowRadius={8}
                                 elevation={4}
                             >
@@ -333,11 +333,17 @@ export default function QRScannerScreen() {
                                         w={32}
                                         h={32}
                                         backgroundColor={AppTheme.colors.blue[600]}
-                                        borderRadius={AppTheme.borderRadius.lg}
+                                        borderRadius={AppTheme.borderRadius['2xl']}
                                         alignItems="center"
                                         justifyContent="center"
                                     >
-                                        <Icon name="help-outline" size={18} color="#fff" />
+                                        <Text
+                                            color="#FFFFFF"
+                                            fontWeight="700"
+                                            fontSize={AppTheme.typography.fontSizes.sm}
+                                        >
+                                            ?
+                                        </Text>
                                     </Box>
                                     <Heading
                                         size="md"
@@ -355,19 +361,19 @@ export default function QRScannerScreen() {
                                 <VStack space="lg">
                                     {[
                                         {
-                                            step: 1,
+                                            step: '1',
                                             title: 'Scan QR Code',
                                             desc: 'Find the QR code at any participating business location',
                                             bg: AppTheme.colors.blue[600],
                                         },
                                         {
-                                            step: 2,
+                                            step: '2',
                                             title: 'Select Services',
                                             desc: 'Choose from available services and see pricing upfront',
                                             bg: '#8B5CF6',
                                         },
                                         {
-                                            step: 3,
+                                            step: '3',
                                             title: 'Get Your Ticket',
                                             desc: 'Receive real-time updates and notifications on your position',
                                             bg: AppTheme.colors.success[500],
@@ -375,17 +381,22 @@ export default function QRScannerScreen() {
                                     ].map(({ step, title, desc, bg }) => (
                                         <HStack key={step} alignItems="flex-start" space="md">
                                             <Box
-                                                w={32}
-                                                h={32}
+                                                w={40}
+                                                h={40}
                                                 backgroundColor={bg}
-                                                borderRadius={AppTheme.borderRadius.full}
+                                                borderRadius={AppTheme.borderRadius.md}
                                                 alignItems="center"
                                                 justifyContent="center"
+                                                shadowColor="#000"
+                                                shadowOffset={{ width: 0, height: 2 }}
+                                                shadowOpacity={0.1}
+                                                shadowRadius={4}
+                                                elevation={2}
                                             >
                                                 <Text
-                                                    color="#fff"
+                                                    color="#FFFFFF"
                                                     fontWeight="700"
-                                                    fontSize={AppTheme.typography.fontSizes.sm}
+                                                    fontSize={AppTheme.typography.fontSizes.md}
                                                 >
                                                     {step}
                                                 </Text>
@@ -410,7 +421,7 @@ export default function QRScannerScreen() {
                                                             : AppTheme.colors.text.secondary
                                                     }
                                                     fontSize={AppTheme.typography.fontSizes.sm}
-                                                    lineHeight={18}
+                                                    lineHeight={20}
                                                 >
                                                     {desc}
                                                 </Text>

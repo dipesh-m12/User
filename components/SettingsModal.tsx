@@ -1,13 +1,14 @@
 // components/SettingsModal.tsx
+import { ConfirmationModal } from '@/components/ConfirmationModal';
 import { AppTheme } from '@/constants/theme';
 import { Box, Button, ButtonText, HStack, Pressable, ScrollView, Switch, Text, VStack } from '@gluestack-ui/themed';
 import React, { useState } from 'react';
-import { Dimensions, Modal } from 'react-native';
+import { Alert, Dimensions, Modal } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { mockSettings, type SettingsState } from '../constants/profileTypes';
+import { LanguageSelectionModal } from './LanguageSelectionModal';
 import { PrivacyPolicyModal } from './PrivacyPolicyModal'; // ✅ Import the modal
 import { useTheme } from './ThemeProvider';
-import { LanguageSelectionModal } from './LanguageSelectionModal';
 
 
 const { height: screenHeight } = Dimensions.get('window');
@@ -25,6 +26,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     const [settings, setSettings] = useState<SettingsState>(mockSettings);
     const [showPrivacyModal, setShowPrivacyModal] = useState(false);
     const [showLanguageModal, setShowLanguageModal] = useState(false);
+    const [showDeleteAccountModal, setShowDeleteAccountModal] = useState(false);
+
 
 
     const updateSetting = (key: keyof SettingsState, value: any) => {
@@ -36,6 +39,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     // ✅ Handle Privacy & Security click
     const handlePrivacyClick = () => {
         setShowPrivacyModal(true);
+    };
+    const deleteAccount = () => {
+        setShowDeleteAccountModal(true);
+        // Handle account deletion logic here
     };
 
     // ✅ Handle Privacy modal close
@@ -194,17 +201,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                                         thumbColor={settings.pushNotifications ? '#ffffff' : '#ffffff'}
                                     />
                                 )}
-
-                                {/* Edit Selected Services */}
-                                {renderSettingItem(
-                                    'edit',
-                                    '#ffffff',
-                                    AppTheme.colors.purple[500],
-                                    'Edit Selected Services',
-                                    'Customize your service preferences',
-                                    <Icon name="chevron-right" size={24} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[500]} />
-                                )}
-
                                 {/* Dark Mode */}
                                 {renderSettingItem(
                                     'dark-mode',
@@ -244,6 +240,16 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                                     <Icon name="chevron-right" size={24} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[500]} />,
                                     handlePrivacyClick
                                 )}
+                                {/* Delete Account */}
+                                {renderSettingItem(
+                                    'delete-account',
+                                    '#ffffff',
+                                    AppTheme.colors.error[500],
+                                    'Delete Account',
+                                    'Permanently delete your account',
+                                    <Icon name="chevron-right" size={24} color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[500]} />,
+                                    deleteAccount
+                                )}
 
                             </VStack>
                         </ScrollView>
@@ -275,6 +281,18 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 currentLanguage={settings.language}
                 onSelect={handleLanguageSelect}
                 onClose={handleLanguageClose}
+            />
+            <ConfirmationModal
+                isVisible={showDeleteAccountModal}
+                onClose={() => setShowDeleteAccountModal(false)}
+                onConfirm={() => {
+                    setShowDeleteAccountModal(false);
+                    // Handle delete account logic
+                    Alert.alert('Account Deleted', 'Your account has been successfully deleted.');
+                }}
+                title="Delete Account Confirmation"
+                message="Are you sure you want to delete your account? This action cannot be undone."
+                confirmText="Delete Account"
             />
 
         </>

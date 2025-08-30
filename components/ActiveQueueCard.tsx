@@ -136,18 +136,25 @@ export const ActiveQueueCard: React.FC<ActiveQueueCardProps> = ({
 
           {/* Individual service card */}
           <Box
-            backgroundColor="#ffffff"
-            borderRadius={12}
+            backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.blue[50]}
+            borderRadius={AppTheme.borderRadius.lg}
+            p={AppTheme.spacing.md}
+            mt={AppTheme.spacing.md}
+            borderWidth={0.5}
+            borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.blue[200]}
+            shadowColor="#000000"
             px={AppTheme.spacing.md}
             py={AppTheme.spacing.sm}
-            className="shadow-md" // nativewind shadow
-            elevation={2} // android shadow
+            shadowOffset={{ width: 0, height: 2 }}
+            shadowOpacity={isDark ? 0.3 : 0.1}
+            shadowRadius={4}
+            elevation={3}
           >
             <HStack alignItems="center" justifyContent="space-between">
-              <Text color={AppTheme.colors.gray[600]} fontSize={15}>
+              <Text color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]} fontSize={15}>
                 {queue.service.name}
               </Text>
-              <Text color={AppTheme.colors.blue[600]} fontWeight="600" fontSize={15}>
+              <Text color={isDark ? AppTheme.colors.text.dark.secondary : AppTheme.colors.blue[900]} fontWeight="600" fontSize={15}>
                 ₹{queue.service.price}
               </Text>
             </HStack>
@@ -155,18 +162,24 @@ export const ActiveQueueCard: React.FC<ActiveQueueCardProps> = ({
 
           {/* Total row */}
           <Box
-            backgroundColor="#F8F9FF" // light blue background
-            borderRadius={12}
-            px={AppTheme.spacing.md}
-            py={AppTheme.spacing.sm}
-            className="shadow-md"
-            elevation={2}
+            backgroundColor={isDark ? AppTheme.colors.dark.surface : AppTheme.colors.blue[50]}
+            borderRadius={AppTheme.borderRadius.lg}
+            p={AppTheme.spacing.md}
+            mt={AppTheme.spacing.md}
+            borderWidth={2}
+            borderColor={isDark ? AppTheme.colors.dark.border : AppTheme.colors.blue[200]}
+            shadowColor="#000000"
+            shadowOffset={{ width: 0, height: 2 }}
+            shadowOpacity={isDark ? 0.3 : 0.1}
+            shadowRadius={4}
+            elevation={3}
           >
             <HStack alignItems="center" justifyContent="space-between">
-              <Text fontWeight="700" color={AppTheme.colors.gray[800]} fontSize={15}>
+              <Text fontWeight="700" color={isDark ? AppTheme.colors.text.dark.primary : AppTheme.colors.blue[900]}
+                fontSize={15}>
                 Total
               </Text>
-              <Text fontWeight="700" color={AppTheme.colors.blue[600]} fontSize={15}>
+              <Text fontWeight="700" color={isDark ? AppTheme.colors.dark.accent : AppTheme.colors.blue[700]} fontSize={15}>
                 ₹{queue.total}
               </Text>
             </HStack>
@@ -194,11 +207,12 @@ export const ActiveQueueCard: React.FC<ActiveQueueCardProps> = ({
           </Box>
 
           {/* Buttons Row */}
-          <HStack space="md" mt={AppTheme.spacing.lg}>
+          <HStack space="3xl" mt={AppTheme.spacing.lg}>
             <Pressable
               onPress={() => onEdit(queue)}
               backgroundColor={AppTheme.colors.blue[500]}
               borderRadius={14}
+
               w={56}
               h={56}
               alignItems="center"

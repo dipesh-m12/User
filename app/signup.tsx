@@ -715,7 +715,7 @@ export default function SignupScreen() {
               >
                 <Input w="100%" h="100%" variant="outline" borderWidth={0} backgroundColor="transparent">
                   <InputField
-                    ref={otpRefs[index]}
+                    ref={otpRefs[index] as any}
                     textAlign="center"
                     fontSize={AppTheme.typography.fontSizes.lg}
                     fontWeight="700"
@@ -1005,7 +1005,7 @@ export default function SignupScreen() {
                     <DateTimePicker
                       value={selectedDate || new Date(2000, 0, 1)}
                       mode="date"
-                      display="wheels"
+                      display="spinner"
                       onChange={handleDateChange}
                       maximumDate={new Date()}
                       minimumDate={getMinDate()}
