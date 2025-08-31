@@ -1,16 +1,19 @@
-import { AppTheme } from '@/constants/theme';
-import { Box, HStack, Pressable, Text, VStack } from '@gluestack-ui/themed';
-import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import { useTheme } from './ThemeProvider';
-import type { Business } from '../constants/exploreMockData';
+import { AppTheme } from "@/constants/theme";
+import { Box, HStack, Pressable, Text, VStack } from "@gluestack-ui/themed";
+import React from "react";
+import Icon from "react-native-vector-icons/MaterialIcons";
+import { useTheme } from "./ThemeProvider";
+import type { Business } from "../constants/exploreMockData";
 
 interface BusinessCardProps {
   business: Business;
   onPress: () => void;
 }
 
-export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress }) => {
+export const BusinessCard: React.FC<BusinessCardProps> = ({
+  business,
+  onPress,
+}) => {
   const { isDark } = useTheme();
 
   return (
@@ -35,12 +38,18 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress })
             alignItems="center"
             justifyContent="center"
           >
-            <Icon 
-              name={business.category === 'Beauty & Wellness' ? 'spa' : 
-                    business.category === 'Restaurant' ? 'restaurant' :
-                    business.category === 'Healthcare' ? 'local-hospital' : 'business'}
-              size={24} 
-              color={AppTheme.colors.blue[600]} 
+            <Icon
+              name={
+                business.category === "Beauty & Wellness"
+                  ? "spa"
+                  : business.category === "Restaurant"
+                  ? "restaurant"
+                  : business.category === "Healthcare"
+                  ? "local-hospital"
+                  : "business"
+              }
+              size={24}
+              color={AppTheme.colors.blue[600]}
             />
           </Box>
 
@@ -49,10 +58,14 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress })
             <HStack justifyContent="space-between" alignItems="flex-start">
               <VStack flex={1}>
                 <HStack alignItems="center" space="xs">
-                  <Text 
+                  <Text
                     fontSize={AppTheme.typography.fontSizes.md}
                     fontWeight="600"
-                    color={isDark ? AppTheme.colors.gray[50] : AppTheme.colors.gray[900]}
+                    color={
+                      isDark
+                        ? AppTheme.colors.gray[50]
+                        : AppTheme.colors.gray[900]
+                    }
                     flex={1}
                   >
                     {business.name}
@@ -64,7 +77,7 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress })
                       px={AppTheme.spacing.xs}
                       py={2}
                     >
-                      <Text 
+                      <Text
                         fontSize={AppTheme.typography.fontSizes.xs}
                         fontWeight="700"
                         color="#000000"
@@ -74,10 +87,14 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress })
                     </Box>
                   )}
                 </HStack>
-                
-                <Text 
+
+                <Text
                   fontSize={AppTheme.typography.fontSizes.sm}
-                  color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                  color={
+                    isDark
+                      ? AppTheme.colors.gray[400]
+                      : AppTheme.colors.gray[600]
+                  }
                 >
                   {business.category}
                 </Text>
@@ -88,41 +105,44 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress })
             <HStack alignItems="center" space="md">
               <HStack alignItems="center" space="xs">
                 <Icon name="star" size={16} color="#FFB800" />
-                <Text 
+                <Text
                   fontSize={AppTheme.typography.fontSizes.sm}
                   fontWeight="500"
-                  color={isDark ? AppTheme.colors.gray[200] : AppTheme.colors.gray[700]}
+                  color={
+                    isDark
+                      ? AppTheme.colors.gray[200]
+                      : AppTheme.colors.gray[700]
+                  }
                 >
                   {business.rating}
                 </Text>
               </HStack>
-              
+
               <HStack alignItems="center" space="xs">
-                <Icon 
-                  name="location-on" 
-                  size={16} 
-                  color={isDark ? AppTheme.colors.blue[400] : AppTheme.colors.blue[600]} 
+                <Icon
+                  name="location-on"
+                  size={16}
+                  color={
+                    isDark
+                      ? AppTheme.colors.blue[400]
+                      : AppTheme.colors.blue[600]
+                  }
                 />
-                <Text 
+                <Text
                   fontSize={AppTheme.typography.fontSizes.sm}
-                  color={isDark ? AppTheme.colors.gray[400] : AppTheme.colors.gray[600]}
+                  color={
+                    isDark
+                      ? AppTheme.colors.gray[400]
+                      : AppTheme.colors.gray[600]
+                  }
                 >
                   {business.distance} mi
                 </Text>
               </HStack>
 
-              {business.isLiveQueue && (
-                <HStack alignItems="center" space="xs">
-                  <Box w={8} h={8} backgroundColor={AppTheme.colors.success[500]} borderRadius={4} />
-                  <Text 
-                    fontSize={AppTheme.typography.fontSizes.xs}
-                    color={AppTheme.colors.success[600]}
-                    fontWeight="500"
-                  >
-                    Live queue data
-                  </Text>
-                </HStack>
-              )}
+              {/* {business.isLiveQueue && (
+               
+              )} */}
             </HStack>
 
             {/* Queue Info */}
@@ -133,18 +153,26 @@ export const BusinessCard: React.FC<BusinessCardProps> = ({ business, onPress })
                 px={AppTheme.spacing.sm}
                 py={AppTheme.spacing.xs}
               >
-                <Text fontSize={AppTheme.typography.fontSizes.xs} color="#856404" fontWeight="500">
+                <Text
+                  fontSize={AppTheme.typography.fontSizes.xs}
+                  color="#856404"
+                  fontWeight="500"
+                >
                   {business.queueCount} in queue
                 </Text>
               </Box>
-              
+
               <Box
                 backgroundColor="#E1F5FE"
                 borderRadius={AppTheme.borderRadius.sm}
                 px={AppTheme.spacing.sm}
                 py={AppTheme.spacing.xs}
               >
-                <Text fontSize={AppTheme.typography.fontSizes.xs} color="#01579B" fontWeight="500">
+                <Text
+                  fontSize={AppTheme.typography.fontSizes.xs}
+                  color="#01579B"
+                  fontWeight="500"
+                >
                   {business.estimatedWait} mins wait
                 </Text>
               </Box>

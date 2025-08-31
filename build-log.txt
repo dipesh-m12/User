@@ -1,0 +1,1578 @@
+★ eas-cli@16.18.0 is now available.
+To upgrade, run:
+npm install -g eas-cli
+Proceeding with outdated version.
+
+Resolved "production" environment for the build. Learn more: https://docs.expo.dev/eas/environment-variables/#setting-the-environment-for-your-builds
+No environment variables with visibility "Plain text" and "Sensitive" found for the "production" environment on EAS.
+
+Specified value for "android.package" in app.json is ignored because an android directory was detected in the project.
+EAS Build will use the value found in the native code.
+⠋ Incrementing versionCode from 3 to 4.⠙ Incrementing versionCode from 3 to 4.⠹ Incrementing versionCode from 3 to 4.⠸ Incrementing versionCode from 3 to 4.⠼ Incrementing versionCode from 3 to 4.⠴ Incrementing versionCode from 3 to 4.✔ Incremented versionCode from 3 to 4.
+✔ Using remote Android credentials (Expo server)
+✔ Using Keystore from configuration: Build Credentials lZx7hCqSio (default)
+⠋ Compressing project files⠙ Compressing project files✔ Compressed project files 1s (1.2 MB)
+⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⌛️ Computing the project fingerprint is taking longer than expected...
+⠋ Computing project fingerprint⏩ To skip this step, set the environment variable: EAS_SKIP_AUTO_FINGERPRINT=1
+⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint⠋ Computing project fingerprint⠙ Computing project fingerprint⠹ Computing project fingerprint⠸ Computing project fingerprint⠼ Computing project fingerprint⠴ Computing project fingerprint⠦ Computing project fingerprint⠧ Computing project fingerprint⠇ Computing project fingerprint⠏ Computing project fingerprint✔ Computed project fingerprint
+ANDROID_NDK_HOME environment variable was not specified, continuing build without NDK
+[SETUP_WORKINGDIR] Preparing workingdir /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc
+[START_BUILD] Starting build
+  "job": {
+    "type": "generic",
+    "platform": "android",
+    "projectRootDirectory": ".",
+    "projectArchive": {
+      "type": "PATH",
+      "path": "/tmp/dipesh-mishra/eas-cli-nodejs/f233e5d7-ea3a-4448-8067-2cafd00a6c39.tar.gz"
+    },
+    "builderEnvironment": {
+      "env": {}
+    },
+    "cache": {
+      "disabled": false,
+      "paths": [],
+      "clear": false
+    },
+    "updates": {},
+    "buildType": "apk",
+    "username": "dipeshmishra",
+    "version": {
+      "versionCode": "4"
+    },
+    "experimental": {},
+    "mode": "build",
+    "triggeredBy": "EAS_CLI",
+    "appId": "11b128d2-a9b4-48e1-ab78-eb76fba4dd27",
+    "initiatingUserId": "c2da837e-f2e3-487f-90f8-864748eb5771"
+  }
+[PREPARE_PROJECT] .npmrc found at .npmrc
+[READ_PACKAGE_JSON] Using package.json:
+[READ_PACKAGE_JSON] {
+  "name": "userapp",
+  "main": "expo-router/entry",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start",
+    "reset-project": "node ./scripts/reset-project.js",
+    "android": "DARK_MODE=media expo start --android",
+    "ios": "DARK_MODE=media expo start --ios",
+    "web": "DARK_MODE=media expo start --web",
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "@gluestack-style/react": "^1.0.57",
+    "@gluestack-ui/config": "^1.1.20",
+    "@gluestack-ui/icon": "^0.1.27",
+    "@gluestack-ui/nativewind-utils": "^1.0.26",
+    "@gluestack-ui/overlay": "^0.1.22",
+    "@gluestack-ui/themed": "^1.1.73",
+    "@gluestack-ui/toast": "^1.0.9",
+    "@legendapp/motion": "^2.4.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/datetimepicker": "^8.4.4",
+    "@react-native-community/slider": "^5.0.1",
+    "@react-navigation/bottom-tabs": "^7.4.6",
+    "@react-navigation/elements": "^2.3.8",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/native-stack": "^7.3.10",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "expo": "~53.0.22",
+    "expo-blur": "~14.1.5",
+    "expo-constants": "~17.1.7",
+    "expo-dev-client": "~5.2.4",
+    "expo-font": "~13.3.2",
+    "expo-haptics": "~14.1.4",
+    "expo-image": "~2.4.0",
+    "expo-linear-gradient": "~14.1.5",
+    "expo-linking": "~7.1.7",
+    "expo-router": "~5.1.5",
+    "expo-splash-screen": "~0.30.10",
+    "expo-status-bar": "~2.2.3",
+    "expo-symbols": "~0.4.5",
+    "expo-system-ui": "~5.0.11",
+    "expo-web-browser": "~14.2.0",
+    "nativewind": "^4.1.23",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-css-interop": "^0.1.22",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "15.11.2",
+    "react-native-vector-icons": "^10.3.0",
+    "react-native-web": "~0.20.0",
+    "react-native-webview": "13.13.5",
+    "tailwindcss": "^3.4.17",
+    "zod": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~19.0.10",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "eslint": "^9.25.0",
+    "eslint-config-expo": "~9.2.0",
+    "jscodeshift": "^0.15.2",
+    "typescript": "~5.8.3"
+  },
+  "private": true
+}
+[INSTALL_DEPENDENCIES] Running "npm install" in /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build directory
+[INSTALL_DEPENDENCIES] npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+[INSTALL_DEPENDENCIES] npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+[INSTALL_DEPENDENCIES] npm warn deprecated react-native-vector-icons@10.3.0: react-native-vector-icons package has moved to a new model of per-icon-family packages. See the https://github.com/oblador/react-native-vector-icons/blob/master/MIGRATION.md on how to migrate
+[INSTALL_DEPENDENCIES] added 1250 packages, and audited 1251 packages in 17s
+[INSTALL_DEPENDENCIES] 205 packages are looking for funding
+[INSTALL_DEPENDENCIES]   run `npm fund` for details
+[INSTALL_DEPENDENCIES] 3 low severity vulnerabilities
+[INSTALL_DEPENDENCIES] 
+[INSTALL_DEPENDENCIES] To address all issues (including breaking changes), run:
+[INSTALL_DEPENDENCIES]   npm audit fix --force
+[INSTALL_DEPENDENCIES] 
+[INSTALL_DEPENDENCIES] Run `npm audit` for details.
+The NODE_ENV environment variable is required but was not specified. Ensure the project is bundled with Expo CLI or NODE_ENV is set.
+Proceeding without mode-specific .env
+[READ_APP_CONFIG] Using app configuration:
+[READ_APP_CONFIG] {
+  "name": "QVuew: Smart Queue",
+  "slug": "UserApp",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/images/icon.png",
+  "scheme": "qvuewuser",
+  "userInterfaceStyle": "automatic",
+  "newArchEnabled": true,
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.qvuew.userapp"
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/images/adaptive-icon.png",
+      "backgroundColor": "#ffffff"
+    },
+    "edgeToEdgeEnabled": true,
+    "package": "com.qvuew.userapp"
+  },
+  "web": {
+    "bundler": "metro",
+    "output": "static",
+    "favicon": "./assets/images/favicon.png"
+  },
+  "plugins": [
+    "expo-router",
+    [
+      "expo-splash-screen",
+      {
+        "image": "./assets/images/splash-icon.png",
+        "imageWidth": 200,
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      }
+    ]
+  ],
+  "experiments": {
+    "typedRoutes": true
+  },
+  "extra": {
+    "router": {},
+    "eas": {
+      "projectId": "11b128d2-a9b4-48e1-ab78-eb76fba4dd27"
+    }
+  },
+  "sdkVersion": "53.0.0",
+  "platforms": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "androidStatusBar": {
+    "backgroundColor": "#ffffff"
+  }
+}
+[RUN_EXPO_DOCTOR] Running "expo doctor"
+[RUN_EXPO_DOCTOR] Running 17 checks on your project...
+[RUN_EXPO_DOCTOR] 15/17 checks passed. 2 checks failed. Possible issues detected:
+[RUN_EXPO_DOCTOR] Use the --verbose flag to see more details about passed checks.
+[RUN_EXPO_DOCTOR] 
+[RUN_EXPO_DOCTOR] ✖ Check for app config fields that may not be synced in a non-CNG project
+[RUN_EXPO_DOCTOR] This project contains native project folders but also has native configuration properties in app.json, indicating it is configured to use Prebuild. When the android/ios folders are present, EAS Build will not sync the following properties: orientation, icon, scheme, userInterfaceStyle, ios, android, plugins, androidStatusBar. 
+[RUN_EXPO_DOCTOR] 
+[RUN_EXPO_DOCTOR] Advice:
+[RUN_EXPO_DOCTOR] Add '/android' to your .gitignore file if you intend to use CNG / Prebuild. Learn more: https://docs.expo.dev/workflow/prebuild/#usage-with-eas-build
+[RUN_EXPO_DOCTOR] 
+[RUN_EXPO_DOCTOR] ✖ Check that packages match versions required by installed Expo SDK
+[RUN_EXPO_DOCTOR] The following packages should be updated for best compatibility with the installed expo version:
+[RUN_EXPO_DOCTOR]   @react-native-async-storage/async-storage@2.2.0 - expected version: 2.1.2
+[RUN_EXPO_DOCTOR]   @react-native-community/datetimepicker@8.4.4 - expected version: 8.4.1
+[RUN_EXPO_DOCTOR]   @react-native-community/slider@5.0.1 - expected version: 4.5.6
+[RUN_EXPO_DOCTOR]   @react-navigation/bottom-tabs@^7.4.6 - expected version: ^7.3.10
+[RUN_EXPO_DOCTOR]   @react-navigation/native@^7.1.17 - expected version: ^7.1.6
+[RUN_EXPO_DOCTOR] Your project may not work correctly until you install the expected versions of the packages.
+[RUN_EXPO_DOCTOR] Found outdated dependencies
+[RUN_EXPO_DOCTOR] Advice:
+[RUN_EXPO_DOCTOR] Use 'npx expo install --check' to review and upgrade your dependencies.
+[RUN_EXPO_DOCTOR] To ignore specific packages, add them to "expo.install.exclude" in package.json. Learn more: https://expo.fyi/dependency-validation
+[RUN_EXPO_DOCTOR] 2 checks failed, indicating possible issues with the project.
+[RUN_EXPO_DOCTOR] Command "expo doctor" failed.
+Error: npx -y expo-doctor exited with non-zero code: 1
+    at ChildProcess.completionListener (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/spawn-async/build/spawnAsync.js:42:23)
+    at Object.onceWrapper (node:events:639:26)
+    at ChildProcess.emit (node:events:524:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+    ...
+    at spawnAsync (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/spawn-async/build/spawnAsync.js:7:23)
+    at spawn (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/turtle-spawn/dist/index.js:16:47)
+    at runExpoDoctor (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/common/setup.js:110:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/common/setup.js:88:17
+    at async BuildContext.runBuildPhase (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/context.js:121:28)
+    at async setupAsync (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/common/setup.js:86:9)
+    at async buildAsync (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/builders/android.js:39:5)
+    at async runBuilderWithHooksAsync (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/builders/common.js:12:13)
+    at async Object.androidBuilder (/home/dipesh-mishra/.npm/_npx/a4ff5c16beb6b833/node_modules/@expo/build-tools/dist/builders/android.js:25:16)
+[PREBUILD] Skipped running "expo prebuild" because the "android" directory already exists. Learn more about the build process: https://docs.expo.dev/build-reference/android-builds/
+[PREPARE_CREDENTIALS] Writing secrets to the project's directory
+[PREPARE_CREDENTIALS] Injecting signing config into build.gradle
+[EAGER_BUNDLE] Starting Metro Bundler
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ░░░░░░░░░░░░░░░░  1.0% (1/1)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓░░░░░░░░░░░░░ 20.2% (133/296)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓░░░░░░░░░ 46.0% (392/592)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓░░░░░░ 65.3% (607/751)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 73.3% ( 837/1133)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 73.3% (1310/1757)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓░░░ 83.9% (1698/1854)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓░░░ 86.6% (1943/2159)
+[EAGER_BUNDLE] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 95.0% (2362/2460)
+[EAGER_BUNDLE] Android Bundled 35315ms node_modules/expo-router/entry.js (2526 modules)
+[EAGER_BUNDLE] Writing bundle output to: /tmp/97c2pnujirm/index.js
+[EAGER_BUNDLE] Copying 28 asset files
+[EAGER_BUNDLE] Done writing bundle output
+[RUN_GRADLEW] Running 'gradlew :app:assembleRelease' in /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] > Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:processResources
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :gradle-plugin:shared:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :gradle-plugin:shared:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+[RUN_GRADLEW] > Task :gradle-plugin:shared:processResources NO-SOURCE
+[RUN_GRADLEW] > Task :gradle-plugin:shared:classes UP-TO-DATE
+[RUN_GRADLEW] > Task :gradle-plugin:shared:jar
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:classes
+[RUN_GRADLEW] > Task :gradle-plugin:settings-plugin:jar
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:processResources
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:classes
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-gradle-plugin:expo-autolinking-plugin:jar
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:processResources
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:processResources
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:classes
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:pluginDescriptors
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:processResources
+[RUN_GRADLEW] > Task :gradle-plugin:react-native-gradle-plugin:jar
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:classes
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:compileKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher-gradle-plugin:jar
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:classes
+[RUN_GRADLEW] > Task :expo-module-gradle-plugin:jar
+[RUN_GRADLEW] > Configure project :app
+[RUN_GRADLEW] ℹ️  [33mApplying gradle plugin[0m '[32mexpo-dev-launcher-gradle-plugin[0m'
+[RUN_GRADLEW] > Configure project :
+[RUN_GRADLEW] [32m[ExpoRootProject][0m Using the following versions:
+[RUN_GRADLEW]   - buildTools:  [32m35.0.0[0m
+[RUN_GRADLEW]   - minSdk:      [32m24[0m
+[RUN_GRADLEW]   - compileSdk:  [32m35[0m
+[RUN_GRADLEW]   - targetSdk:   [32m35[0m
+[RUN_GRADLEW]   - ndk:         [32m27.1.12297006[0m
+[RUN_GRADLEW]   - kotlin:      [32m2.0.21[0m
+[RUN_GRADLEW]   - ksp:         [32m2.0.21-1.0.28[0m
+[RUN_GRADLEW] > Configure project :expo
+[RUN_GRADLEW] Using expo modules
+[RUN_GRADLEW]   - [32mexpo-constants[0m (17.1.7)
+[RUN_GRADLEW]   - [32mexpo-dev-client[0m (5.2.4)
+[RUN_GRADLEW]   - [32mexpo-dev-launcher[0m (5.1.16)
+[RUN_GRADLEW]   - [32mexpo-dev-menu[0m (6.1.14)
+[RUN_GRADLEW] - [32mexpo-dev-menu-interface[0m (1.10.0)
+[RUN_GRADLEW]   - [32mexpo-json-utils[0m (0.15.0)
+[RUN_GRADLEW]   - [32mexpo-manifests[0m (0.16.6)
+[RUN_GRADLEW]   - [32mexpo-modules-core[0m (2.5.0)
+[RUN_GRADLEW]   - [32mexpo-updates-interface[0m (1.1.0)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-asset[0m (11.1.7)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-blur[0m (14.1.5)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-file-system[0m (18.1.11)
+[RUN_GRADLEW] - [33m[📦][0m [32mexpo-font[0m (13.3.2)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-haptics[0m (14.1.4)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-image[0m (2.4.0)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-keep-awake[0m (14.1.4)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-linear-gradient[0m (14.1.5)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-linking[0m (7.1.7)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-splash-screen[0m (0.30.10)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-system-ui[0m (5.0.11)
+[RUN_GRADLEW]   - [33m[📦][0m [32mexpo-web-browser[0m (14.2.0)
+[RUN_GRADLEW] > Configure project :react-native-reanimated
+[RUN_GRADLEW] Android gradle plugin: 8.8.2
+[RUN_GRADLEW] Gradle: 8.13
+[RUN_GRADLEW] > Task :app:buildKotlinToolingMetadata
+[RUN_GRADLEW] > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :app:generateAutolinkingNewArchitectureFiles
+[RUN_GRADLEW] > Task :app:generateAutolinkingPackageList
+[RUN_GRADLEW] > Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+[RUN_GRADLEW] > Task :app:generateCodegenArtifactsFromSchema SKIPPED
+[RUN_GRADLEW] > Task :app:preBuild
+[RUN_GRADLEW] > Task :app:preReleaseBuild
+[RUN_GRADLEW] > Task :app:generateReleaseBuildConfig
+[RUN_GRADLEW] > Task :expo:generatePackagesList
+[RUN_GRADLEW] > Task :expo:preBuild
+[RUN_GRADLEW] > Task :expo:preReleaseBuild
+[RUN_GRADLEW] > Task :expo:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-dev-client:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-client:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-client:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-dev-launcher:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-launcher:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-launcher:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-dev-menu:clenupAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-constants:createExpoConfig
+[RUN_GRADLEW] > Task :expo-constants:preBuild
+[RUN_GRADLEW] > Task :expo-constants:preReleaseBuild
+[RUN_GRADLEW] > Task :expo-constants:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:writeReleaseAarMetadata
+[RUN_GRADLEW] The NODE_ENV environment variable is required but was not specified. Ensure the project is bundled with Expo CLI or NODE_ENV is set. Using only .env.local and .env
+[RUN_GRADLEW] > Task :expo-json-utils:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-json-utils:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-json-utils:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-manifests:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-manifests:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-manifests:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-modules-core:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-modules-core:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-modules-core:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-updates-interface:preBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-updates-interface:preReleaseBuild UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-menu:copyAssets
+[RUN_GRADLEW] > Task :expo-dev-menu:preBuild
+[RUN_GRADLEW] > Task :expo-dev-menu:preReleaseBuild
+[RUN_GRADLEW] > Task :expo-updates-interface:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo-dev-menu:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:preBuild
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:preBuild
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-community_slider:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-community_slider:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-community_slider:preBuild
+[RUN_GRADLEW] > Task :react-native-community_slider:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-community_slider:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:preBuild
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-reanimated:assertMinimalReactNativeVersionTask SKIPPED
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-reanimated:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-gesture-handler:preBuild
+[RUN_GRADLEW] > Task :react-native-gesture-handler:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-gesture-handler:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-reanimated:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-reanimated:prepareReanimatedHeadersForPrefabs
+[RUN_GRADLEW] > Task :react-native-reanimated:prepareWorkletsHeadersForPrefabs
+[RUN_GRADLEW] > Task :react-native-reanimated:preBuild
+[RUN_GRADLEW] > Task :react-native-reanimated:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-reanimated:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-screens:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-safe-area-context:preBuild
+[RUN_GRADLEW] > Task :react-native-safe-area-context:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-safe-area-context:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-screens:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-screens:preBuild
+[RUN_GRADLEW] > Task :react-native-screens:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-screens:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-svg:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-vector-icons:preBuild
+[RUN_GRADLEW] > Task :react-native-vector-icons:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-svg:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-svg:preBuild
+[RUN_GRADLEW] > Task :react-native-svg:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-vector-icons:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-svg:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :react-native-webview:generateCodegenSchemaFromJavaScript
+[RUN_GRADLEW] > Task :react-native-webview:generateCodegenArtifactsFromSchema
+[RUN_GRADLEW] > Task :react-native-webview:preBuild
+[RUN_GRADLEW] > Task :react-native-webview:preReleaseBuild
+[RUN_GRADLEW] > Task :react-native-webview:writeReleaseAarMetadata
+[RUN_GRADLEW] > Task :expo:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:packageReleaseResources
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:packageReleaseResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:processReleaseManifest
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Starting Metro Bundler
+[RUN_GRADLEW] warning: Bundler cache is empty, rebuilding (this may take a minute)
+[RUN_GRADLEW] > Task :expo-modules-core:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:extractDeepLinksRelease
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:processReleaseManifest FROM-CACHE
+[RUN_GRADLEW] > Task :expo:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:compileReleaseLibraryResources
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:compileReleaseLibraryResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:parseReleaseLocalResources FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseRFile FROM-CACHE
+[RUN_GRADLEW] > Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+[RUN_GRADLEW] > Task :expo-modules-core:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-constants:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-dev-client:dataBindingMergeDependencyArtifactsRelease
+[RUN_GRADLEW] > Task :expo-dev-client:dataBindingGenBaseClassesRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:compileReleaseKotlin NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-client:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:compileReleaseJavaWithJavac
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-dev-launcher:dataBindingMergeDependencyArtifactsRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:dataBindingGenBaseClassesRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] SKIPPED
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-json-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-manifests:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-menu:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo-updates-interface:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ░░░░░░░░░░░░░░░░  1.0% (1/1)
+[RUN_GRADLEW] > Task :expo-dev-launcher:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :expo:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :expo:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:packageNdkLibs NO-SOURCE
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓░░░░░░░░░░░░░░ 16.0% ( 70/250)
+[RUN_GRADLEW] > Task :react-native-reanimated:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-gesture-handler:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors
+[RUN_GRADLEW] SKIPPED
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-screens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:javaPreCompileRelease
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :react-native-webview:checkKotlinGradlePluginConfigurationErrors SKIPPED
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseBuildConfig FROM-CACHE
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓░░░░░░░░░░░ 32.4% (245/433)
+[RUN_GRADLEW] > Task :react-native-webview:compileReleaseKotlin FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:compileReleaseJavaWithJavac FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:bundleLibCompileToJarRelease
+[RUN_GRADLEW] > Task :expo:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo:createFullJarRelease
+[RUN_GRADLEW] > Task :expo:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-constants:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-constants:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-constants:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-constants:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-modules-core:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-modules-core:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-modules-core:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-modules-core:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-modules-core:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-constants:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-dev-client:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-client:processReleaseJavaRes NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-client:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-dev-client:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-dev-client:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-dev-launcher:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-dev-launcher:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-menu:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-menu:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-dev-menu:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-dev-menu:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:extractProguardFiles
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓░░░░░░░░░ 46.4% (451/682)
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-json-utils:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-json-utils:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-json-utils:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-json-utils:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-json-utils:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-manifests:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-manifests:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-manifests:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-manifests:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-manifests:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-dev-menu:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-updates-interface:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :expo-updates-interface:processReleaseJavaRes
+[RUN_GRADLEW] > Task :expo-updates-interface:createFullJarRelease
+[RUN_GRADLEW] > Task :expo-updates-interface:extractProguardFiles
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-updates-interface:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo-dev-launcher:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :expo:generateReleaseLintModel
+[RUN_GRADLEW] > Task :expo:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:processReleaseJavaRes NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:processReleaseJavaRes
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-community_slider:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-community_slider:processReleaseJavaRes NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_slider:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-community_slider:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-community_slider:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:processReleaseJavaRes
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-gesture-handler:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-gesture-handler:processReleaseJavaRes
+[RUN_GRADLEW] > Task :react-native-gesture-handler:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-gesture-handler:extractProguardFiles
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 70.3% (661/793)
+[RUN_GRADLEW] > Task :react-native-reanimated:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-reanimated:processReleaseJavaRes NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-reanimated:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-reanimated:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-reanimated:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-gesture-handler:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-safe-area-context:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-safe-area-context:processReleaseJavaRes
+[RUN_GRADLEW] > Task :react-native-safe-area-context:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-safe-area-context:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-safe-area-context:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-screens:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-screens:processReleaseJavaRes
+[RUN_GRADLEW] > Task :react-native-screens:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-screens:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-screens:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-svg:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-svg:processReleaseJavaRes NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-svg:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-svg:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-svg:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-vector-icons:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-vector-icons:processReleaseJavaRes NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-vector-icons:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-vector-icons:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-vector-icons:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-webview:bundleLibRuntimeToJarRelease
+[RUN_GRADLEW] > Task :react-native-webview:processReleaseJavaRes
+[RUN_GRADLEW] > Task :react-native-webview:createFullJarRelease
+[RUN_GRADLEW] > Task :react-native-webview:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseLintModel
+[RUN_GRADLEW] > Task :react-native-webview:prepareLintJarForPublish
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 70.7% ( 848/1153)
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 70.7% (1216/1578)
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓░░░░░ 70.7% (1532/1858)
+[RUN_GRADLEW] > Task :react-native-reanimated:configureCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :react-native-reanimated:generateJsonModelRelease
+[RUN_GRADLEW] > Task :react-native-reanimated:prefabReleaseConfigurePackage
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓░░░ 86.9% (1887/2128)
+[RUN_GRADLEW] > Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :app:createBundleReleaseJsAndAssets
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░ 92.0% (2268/2364)
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.8% (2524/2526)
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (2526/2526)
+[RUN_GRADLEW] Android Bundled 56219ms node_modules/expo-router/entry.js (2526 modules)
+[RUN_GRADLEW] Android node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (2526/2526)
+[RUN_GRADLEW] Writing bundle output to: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle
+[RUN_GRADLEW] Writing sourcemap output to: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map
+[RUN_GRADLEW] Copying 28 asset files
+[RUN_GRADLEW] Done writing bundle output
+[RUN_GRADLEW] Done writing sourcemap output
+[RUN_GRADLEW] > Task :react-native-reanimated:buildCMakeRelWithDebInfo[arm64-v8a][reanimated,worklets]
+[RUN_GRADLEW] > Task :app:checkReleaseAarMetadata
+[RUN_GRADLEW] > Task :app:generateReleaseResValues FROM-CACHE
+[RUN_GRADLEW] > Task :app:mapReleaseSourceSetPaths
+[RUN_GRADLEW] > Task :app:generateReleaseResources
+[RUN_GRADLEW] > Task :app:packageReleaseResources
+[RUN_GRADLEW] > Task :app:parseReleaseLocalResources
+[RUN_GRADLEW] > Task :app:createReleaseCompatibleScreenManifests
+[RUN_GRADLEW] > Task :app:extractDeepLinksRelease FROM-CACHE
+[RUN_GRADLEW] > Task :app:mergeReleaseResources
+[RUN_GRADLEW] > Task :react-native-reanimated:externalNativeBuildRelease
+[RUN_GRADLEW] > Task :react-native-reanimated:prefabReleasePackage
+[RUN_GRADLEW] > Task :app:processReleaseMainManifest
+[RUN_GRADLEW] /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android/app/src/main/AndroidManifest.xml Warning:
+[RUN_GRADLEW] 	provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:0 to replace other declarations but no other declaration present
+[RUN_GRADLEW] > Task :app:processReleaseManifest
+[RUN_GRADLEW] > Task :app:processReleaseManifestForPackage
+[RUN_GRADLEW] > Task :react-native-gesture-handler:buildCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :react-native-gesture-handler:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-gesture-handler:mergeReleaseNativeLibs
+[RUN_GRADLEW] > Task :react-native-gesture-handler:stripReleaseDebugSymbols
+[RUN_GRADLEW] > Task :app:javaPreCompileRelease FROM-CACHE
+[RUN_GRADLEW] > Task :app:extractProguardFiles
+[RUN_GRADLEW] > Task :react-native-gesture-handler:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-gesture-handler:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-gesture-handler:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-gesture-handler:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-gesture-handler:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-gesture-handler:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-gesture-handler:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-gesture-handler:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-gesture-handler:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-safe-area-context:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-safe-area-context:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-safe-area-context:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:extractReleaseAnnotations
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-safe-area-context:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-safe-area-context:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-safe-area-context:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-safe-area-context:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-safe-area-context:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-safe-area-context:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-safe-area-context:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :app:processReleaseResources
+[RUN_GRADLEW] > Task :react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :react-native-screens:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-screens:mergeReleaseNativeLibs
+[RUN_GRADLEW] > Task :react-native-screens:stripReleaseDebugSymbols
+[RUN_GRADLEW] > Task :react-native-screens:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-screens:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-screens:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-screens:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-screens:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-screens:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-screens:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-screens:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-screens:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-screens:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-webview:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-webview:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-webview:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-webview:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-webview:extractDeepLinksForAarRelease
+[RUN_GRADLEW] FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-webview:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-webview:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-webview:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-webview:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-webview:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-webview:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-webview:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-webview:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-community_slider:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-community_slider:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_slider:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_slider:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-community_slider:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-community_slider:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-community_slider:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-community_slider:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-community_slider:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-community_slider:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-community_slider:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-community_slider:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-community_slider:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-reanimated:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-reanimated:mergeReleaseNativeLibs
+[RUN_GRADLEW] > Task :react-native-reanimated:stripReleaseDebugSymbols
+[RUN_GRADLEW] > Task :react-native-reanimated:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-reanimated:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-reanimated:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-reanimated:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-reanimated:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-reanimated:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-reanimated:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-reanimated:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-reanimated:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-reanimated:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-svg:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-svg:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-svg:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-svg:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-svg:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-svg:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-svg:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-svg:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-svg:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-svg:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-svg:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-svg:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-svg:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :react-native-vector-icons:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :react-native-vector-icons:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-vector-icons:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-vector-icons:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :react-native-vector-icons:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :react-native-vector-icons:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :react-native-vector-icons:mergeReleaseShaders
+[RUN_GRADLEW] > Task :react-native-vector-icons:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :react-native-vector-icons:packageReleaseAssets
+[RUN_GRADLEW] > Task :react-native-vector-icons:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :react-native-vector-icons:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :react-native-vector-icons:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :react-native-vector-icons:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-dev-launcher:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-dev-launcher:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-launcher:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-launcher:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-dev-launcher:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-launcher:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-launcher:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-dev-launcher:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-launcher:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-dev-launcher:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-dev-launcher:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-dev-launcher:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-launcher:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-dev-menu:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-dev-menu:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-menu:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-menu:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-dev-menu:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-menu:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-menu:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-dev-menu:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-menu:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-dev-menu:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-dev-menu:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-dev-menu:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-modules-core:configureCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :app:compileReleaseKotlin
+[RUN_GRADLEW] > Task :expo-modules-core:buildCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :app:compileReleaseJavaWithJavac
+[RUN_GRADLEW] > Task :app:generateReleaseLintVitalReportModel
+[RUN_GRADLEW] > Task :expo-constants:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-constants:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-constants:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] Caught exception: Already watching path: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android
+[RUN_GRADLEW] > Task :expo-constants:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-constants:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-constants:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-constants:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-constants:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-constants:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-constants:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-constants:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-constants:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-constants:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-dev-client:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-dev-client:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-client:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-client:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-dev-client:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-client:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-dev-client:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-dev-client:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-dev-client:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-dev-client:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-dev-client:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-dev-client:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-dev-client:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-manifests:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-manifests:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-manifests:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-manifests:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-manifests:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-manifests:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-manifests:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-manifests:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-manifests:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-manifests:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-manifests:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-manifests:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-manifests:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-json-utils:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-json-utils:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-json-utils:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-json-utils:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-json-utils:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-json-utils:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-json-utils:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-json-utils:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-json-utils:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-json-utils:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-json-utils:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-json-utils:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-json-utils:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-updates-interface:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-updates-interface:mergeReleaseNativeLibs NO-SOURCE
+[RUN_GRADLEW] > Task :expo-updates-interface:stripReleaseDebugSymbols NO-SOURCE
+[RUN_GRADLEW] > Task :expo-updates-interface:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-updates-interface:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-updates-interface:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-updates-interface:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-updates-interface:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-updates-interface:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-updates-interface:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-updates-interface:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-updates-interface:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-constants:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-dev-client:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-dev-launcher:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-dev-menu:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-json-utils:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-manifests:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-updates-interface:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-modules-core:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :expo-modules-core:mergeReleaseNativeLibs
+[RUN_GRADLEW] > Task :expo-modules-core:stripReleaseDebugSymbols
+[RUN_GRADLEW] > Task :expo-modules-core:copyReleaseJniLibsProjectAndLocalJars
+[RUN_GRADLEW] > Task :expo-modules-core:extractDeepLinksForAarRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:extractReleaseAnnotations FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:mergeReleaseGeneratedProguardFiles
+[RUN_GRADLEW] > Task :expo-modules-core:mergeReleaseConsumerProguardFiles
+[RUN_GRADLEW] > Task :expo-modules-core:mergeReleaseShaders
+[RUN_GRADLEW] > Task :expo-modules-core:compileReleaseShaders
+[RUN_GRADLEW] NO-SOURCE
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :expo-modules-core:packageReleaseAssets
+[RUN_GRADLEW] > Task :expo-modules-core:prepareReleaseArtProfile
+[RUN_GRADLEW] > Task :expo-modules-core:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :expo-modules-core:syncReleaseLibJars FROM-CACHE
+[RUN_GRADLEW] > Task :expo-modules-core:bundleReleaseLocalLintAar
+[RUN_GRADLEW] > Task :expo-modules-core:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-constants:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-dev-client:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-dev-menu:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-json-utils:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo-modules-core:lintVitalAnalyzeRelease FROM-CACHE
+[RUN_GRADLEW] > Task :expo-updates-interface:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo-manifests:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-community_slider:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-community_slider:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-reanimated:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-gesture-handler:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-reanimated:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-gesture-handler:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-safe-area-context:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-safe-area-context:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-screens:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-svg:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-svg:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-vector-icons:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-vector-icons:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :react-native-webview:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :react-native-webview:writeReleaseLintModelMetadata
+[RUN_GRADLEW] > Task :expo:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-constants:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-dev-client:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-dev-launcher:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-dev-menu:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-json-utils:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-manifests:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-modules-core:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :expo-updates-interface:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-community_slider:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-gesture-handler:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-reanimated:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-safe-area-context:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-screens:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-svg:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-vector-icons:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-webview:generateReleaseLintVitalModel
+[RUN_GRADLEW] > Task :react-native-screens:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :expo:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-constants:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-dev-client:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-dev-launcher:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-dev-menu:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-json-utils:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-manifests:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-modules-core:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :expo-updates-interface:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-community_slider:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-gesture-handler:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-reanimated:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-safe-area-context:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-screens:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-svg:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-vector-icons:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-webview:copyReleaseJniLibsProjectOnly
+[RUN_GRADLEW] > Task :react-native-community_datetimepicker:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] > Task :app:lintVitalAnalyzeRelease
+[RUN_GRADLEW] > Task :app:lintVitalReportRelease
+[RUN_GRADLEW] > Task :app:lintVitalRelease
+[RUN_GRADLEW] > Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] C/C++: ninja: Entering directory `/tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android/app/.cxx/RelWithDebInfo/6y4k225j/arm64-v8a'
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:16:47: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    16 | void RNCSliderEventEmitter::onChange(OnChange $event) const {
+[RUN_GRADLEW] C/C++:       |                                               ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:17:28: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    17 |   dispatchEvent("change", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:17:45: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    17 |   dispatchEvent("change", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                             ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:18:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    18 |     auto $payload = jsi::Object(runtime);
+[RUN_GRADLEW] C/C++:       |          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:19:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    19 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |     ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:19:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    19 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |                                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:20:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    20 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       | ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:20:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    20 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       |                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:21:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    21 |     return $payload;
+[RUN_GRADLEW] C/C++:       |            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:26:77: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    26 | void RNCSliderEventEmitter::onRNCSliderSlidingStart(OnRNCSliderSlidingStart $event) const {
+[RUN_GRADLEW] C/C++:       |                                                                             ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:27:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    27 |   dispatchEvent("rNCSliderSlidingStart", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:27:60: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    27 |   dispatchEvent("rNCSliderSlidingStart", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:28:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    28 |     auto $payload = jsi::Object(runtime);
+[RUN_GRADLEW] C/C++:       |          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:29:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    29 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |     ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:29:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    29 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |                                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:30:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    30 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       | ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:30:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    30 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       |                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:31:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    31 |     return $payload;
+[RUN_GRADLEW] C/C++:       |            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:36:83: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    36 | void RNCSliderEventEmitter::onRNCSliderSlidingComplete(OnRNCSliderSlidingComplete $event) const {
+[RUN_GRADLEW] C/C++:       |                                                                                   ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:37:46: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    37 |   dispatchEvent("rNCSliderSlidingComplete", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                              ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:37:63: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    37 |   dispatchEvent("rNCSliderSlidingComplete", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                                               ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:38:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    38 |     auto $payload = jsi::Object(runtime);
+[RUN_GRADLEW] C/C++:       |          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:39:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    39 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |     ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:39:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    39 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |                                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:40:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    40 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       | ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:40:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    40 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       |                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:41:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    41 |     return $payload;
+[RUN_GRADLEW] C/C++:       |            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:46:75: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    46 | void RNCSliderEventEmitter::onRNCSliderValueChange(OnRNCSliderValueChange $event) const {
+[RUN_GRADLEW] C/C++:       |                                                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:47:42: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    47 |   dispatchEvent("rNCSliderValueChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:47:59: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    47 |   dispatchEvent("rNCSliderValueChange", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:48:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    48 |     auto $payload = jsi::Object(runtime);
+[RUN_GRADLEW] C/C++:       |          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:49:5: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    49 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |     ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:49:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    49 |     $payload.setProperty(runtime, "value", $event.value);
+[RUN_GRADLEW] C/C++:       |                                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:50:1: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    50 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       | ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:50:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    50 | $payload.setProperty(runtime, "fromUser", $event.fromUser);
+[RUN_GRADLEW] C/C++:       |                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp:51:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    51 |     return $payload;
+[RUN_GRADLEW] C/C++:       |            ^
+[RUN_GRADLEW] C/C++: 36 warnings generated.
+[RUN_GRADLEW] > Task :react-native-gesture-handler:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-safe-area-context:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-screens:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-webview:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-edge-to-edge:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-async-storage_async-storage:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-community_slider:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-reanimated:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-svg:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :react-native-vector-icons:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-dev-launcher:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-dev-menu:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-dev-menu-interface:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-modules-core:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:31:44: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    31 | void RNSVGImageEventEmitter::onLoad(OnLoad $event) const {
+[RUN_GRADLEW] C/C++:       |                                            ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:32:26: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    32 |   dispatchEvent("load", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:32:43: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    32 |   dispatchEvent("load", [$event=std::move($event)](jsi::Runtime &runtime) {
+[RUN_GRADLEW] C/C++:       |                                           ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:33:10: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    33 |     auto $payload = jsi::Object(runtime);
+[RUN_GRADLEW] C/C++:       |          ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:36:40: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    36 |   source.setProperty(runtime, "width", $event.source.width);
+[RUN_GRADLEW] C/C++:       |                                        ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:37:41: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    37 |   source.setProperty(runtime, "height", $event.source.height);
+[RUN_GRADLEW] C/C++:       |                                         ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:38:38: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    38 |   source.setProperty(runtime, "uri", $event.source.uri);
+[RUN_GRADLEW] C/C++:       |                                      ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:39:3: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    39 |   $payload.setProperty(runtime, "source", source);
+[RUN_GRADLEW] C/C++:       |   ^
+[RUN_GRADLEW] C/C++: /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp:41:12: warning: '$' in identifier [-Wdollar-in-identifier-extension]
+[RUN_GRADLEW] C/C++:    41 |     return $payload;
+[RUN_GRADLEW] C/C++:       |            ^
+[RUN_GRADLEW] C/C++: 9 warnings generated.
+[RUN_GRADLEW] > Task :expo-constants:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-dev-client:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-manifests:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-json-utils:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :expo-updates-interface:bundleLibRuntimeToDirRelease
+[RUN_GRADLEW] > Task :app:mergeReleaseJniLibFolders
+[RUN_GRADLEW] > Task :app:checkReleaseDuplicateClasses
+[RUN_GRADLEW] > Task :app:mergeReleaseNativeLibs
+[RUN_GRADLEW] > Task :app:dexBuilderRelease
+[RUN_GRADLEW] > Task :app:desugarReleaseFileDependencies
+[RUN_GRADLEW] > Task :app:mergeReleaseStartupProfile
+[RUN_GRADLEW] > Task :app:stripReleaseDebugSymbols
+[RUN_GRADLEW] > Task :app:extractReleaseNativeSymbolTables
+[RUN_GRADLEW] > Task :app:mergeReleaseNativeDebugMetadata
+[RUN_GRADLEW] > Task :app:mergeExtDexRelease
+[RUN_GRADLEW] > Task :app:mergeReleaseArtProfile
+[RUN_GRADLEW] > Task :app:mergeReleaseGlobalSynthetics
+[RUN_GRADLEW] > Task :app:mergeReleaseShaders
+[RUN_GRADLEW] > Task :app:compileReleaseShaders NO-SOURCE
+[RUN_GRADLEW] > Task :app:generateReleaseAssets UP-TO-DATE
+[RUN_GRADLEW] > Task :app:mergeDexRelease
+[RUN_GRADLEW] > Task :app:mergeReleaseAssets
+[RUN_GRADLEW] > Task :app:compressReleaseAssets
+[RUN_GRADLEW] > Task :app:compileReleaseArtProfile
+[RUN_GRADLEW] > Task :app:extractReleaseVersionControlInfo
+[RUN_GRADLEW] > Task :app:processReleaseJavaRes
+[RUN_GRADLEW] > Task :app:optimizeReleaseResources
+[RUN_GRADLEW] > Task :app:collectReleaseDependencies
+[RUN_GRADLEW] > Task :app:mergeReleaseJavaResource
+[RUN_GRADLEW] > Task :app:sdkReleaseDependencyData
+[RUN_GRADLEW] > Task :app:validateSigningRelease
+[RUN_GRADLEW] > Task :app:writeReleaseAppMetadata
+[RUN_GRADLEW] > Task :app:writeReleaseSigningConfigVersions
+[RUN_GRADLEW] > Task :app:packageRelease
+[RUN_GRADLEW] > Task :app:createReleaseApkListingFileRedirect
+[RUN_GRADLEW] > Task :app:assembleRelease
+[RUN_GRADLEW] [Incubating] Problems report is available at: file:///tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android/build/reports/problems/problems-report.html
+[RUN_GRADLEW] Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+[RUN_GRADLEW] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+[RUN_GRADLEW] For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+[RUN_GRADLEW] BUILD SUCCESSFUL in 7m 14s
+[RUN_GRADLEW] 905 actionable tasks: 584 executed, 320 from cache, 1 up-to-date
+[UPLOAD_APPLICATION_ARCHIVE] Application archives:
+[UPLOAD_APPLICATION_ARCHIVE]   - /tmp/dipesh-mishra/eas-build-local-nodejs/120e45f7-c174-4bc9-81b8-446826e7eabc/build/android/app/build/outputs/apk/release/app-release.apk (32.5 MB)
+[UPLOAD_APPLICATION_ARCHIVE] Uploading application archive...
+[PREPARE_ARTIFACTS] Preparing artifacts
+[PREPARE_ARTIFACTS] Writing artifacts to /home/dipesh-mishra/QVuew-Real/User/build.apk
+
+Build successful
+You can find the build artifacts in /home/dipesh-mishra/QVuew-Real/User/build.apk
